@@ -1,0 +1,1 @@
+There are no GFX folders for goals, ideas, or events as all of them are taken from the base game. However, I do plan to put in custom sprites in soon. Or maybe. Idk. 
