@@ -210,6 +210,89 @@ focus_tree = {
 
 		}
 	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Adopt_Cyrillic
+		icon = GFX_focus_ARG_centralize_power
+		prerequisite = { focus = TAN_Closer_to_Moscow }
+		x = 12
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Join_the_USSR
+		icon = GFX_focus_ARG_centralize_power
+		prerequisite = { focus = TAN_Adopt_Cyrillic }
+		mutually_exclusive = { focus = TAN_Autonomous_Oblast}
+		x = 11
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Autonomous_Oblast
+		icon = GFX_focus_ARG_centralize_power
+		prerequisite = { focus = TAN_Adopt_Cyrillic }
+		mutually_exclusive = { focus = TAN_Join_the_USSR}
+		x = 13
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Closer_to_Mongolia
+		icon = GFX_focus_ARG_centralize_power
+		prerequisite = { focus = TAN_Mongolian_Relations }
+		x = 17
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
 
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
@@ -280,7 +363,7 @@ focus_tree = {
 		icon = GFX_focus_ARG_centralize_power
 		prerequisite = { focus = TAN_The_Chairmans_Speech }
 		mutually_exclusive = { focus = TAN_Push_the_Reforms }
-		x = 7
+		x = 5
 		y = 1
 		cost = 10
 		
@@ -323,8 +406,8 @@ focus_tree = {
 		icon = GFX_focus_RAJ_a_policy_of_silence
 		prerequisite = { focus = TAN_The_Ministry_of_Internal_Affairs }
 
-		x = 3
-		y = 2
+		x = 2
+		y = 3
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
 		
@@ -342,11 +425,11 @@ focus_tree = {
 
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
-		id = TAN_Propaganda_Effort
+		id = TAN_Expand_the_State_Printing_House
 		icon = GFX_focus_RAJ_a_policy_of_silence
 		prerequisite = { focus = TAN_Deepen_NKVD_Precense focus = TAN_Invite_Soviet_Advisors }
 
-		x = 3
+		x = 2
 		y = 4
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -369,7 +452,29 @@ focus_tree = {
 		icon = GFX_focus_RAJ_a_policy_of_silence
 		prerequisite = { focus = TAN_Invite_Soviet_Advisors }
 
-		x = 7
+		x = 6
+		y = 4
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Issue_the_Aksa
+		icon = GFX_focus_RAJ_a_policy_of_silence
+		prerequisite = { focus = TAN_Invite_Soviet_Advisors }
+
+		x = 4
 		y = 4
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -388,7 +493,29 @@ focus_tree = {
 
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
-		id = TAN_Arrest_Oiun_Danchay
+		id = TAN_Arrest_Adyg_Tiluliush_Kemchik_Ool
+		icon = GFX_focus_SOV_purge_zinovyevists
+		prerequisite = { focus = TAN_The_Ministry_of_Internal_Affairs }
+
+		x = -1
+		y = 2
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Arrest_Kara_Sal_Pirinlei
 		icon = GFX_focus_SOV_purge_zinovyevists
 		prerequisite = { focus = TAN_The_Ministry_of_Internal_Affairs }
 
@@ -410,11 +537,33 @@ focus_tree = {
 	}
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Raise_the_Kutvans
+		icon = GFX_focus_SOV_purge_zinovyevists
+		prerequisite = { focus = TAN_The_Ministry_of_Internal_Affairs }
+
+		x = 3
+		y = 2
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
 		id = TAN_Control_the_Kurul
 		icon = GFX_focus_SOV_the_supreme_soviet
 		prerequisite = { focus = TAN_Consolidating_Power }
 
-		x = -2
+		x = -4
 		y = 1
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -434,10 +583,10 @@ focus_tree = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 		id = TAN_Restrict_the_Religious
 		icon = GFX_focus_smiling_buddha
-		prerequisite = { focus = TAN_Control_the_Kurul }
+		prerequisite = { focus = TAN_Collectivation }
 
-		x = -4
-		y = 2
+		x = -6
+		y = 6
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
 		
@@ -459,8 +608,8 @@ focus_tree = {
 		prerequisite = { focus = TAN_Restrict_the_Religious }
 		mutually_exclusive = { focus = TAN_Countinue_Monestary_Schools }
 
-		x = -5
-		y = 3
+		x = -7
+		y = 7
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
 		
@@ -481,8 +630,8 @@ focus_tree = {
 		icon = GFX_focus_AUS_union_of_danubian_socialist_republics
 		prerequisite = { focus = TAN_Soviet_Education focus = TAN_Countinue_Monestary_Schools }
 
-		x = -5
-		y = 4
+		x = -7
+		y = 8
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
 		
@@ -503,8 +652,8 @@ focus_tree = {
 		icon = GFX_focus_FIN_socialist_welfare
 		prerequisite = { focus = TAN_Countinue_Monestary_Schools focus = TAN_Soviet_Education }
 
-		x = -3
-		y = 4
+		x = -5
+		y = 8
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
 		
@@ -526,8 +675,8 @@ focus_tree = {
 		prerequisite = { focus = TAN_Restrict_the_Religious }
 		mutually_exclusive = { focus = TAN_Soviet_Education }
 
-		x = -3
-		y = 3
+		x = -5
+		y = 7
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
 		
@@ -544,11 +693,11 @@ focus_tree = {
 	}
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
-		id = TAN_Crush_the_Kuularists
+		id = TAN_Supress_the_Monestaries
 		icon = GFX_focus_SOV_the_last_purge
 		prerequisite = { focus = TAN_Control_the_Kurul }
 
-		x = -1
+		x = -5
 		y = 2
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -566,12 +715,34 @@ focus_tree = {
 	}
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
-		id = TAN_Arrest_the_Opposition
-		icon = GFX_focus_NOR_arrest_quisling
-		prerequisite = { focus = TAN_Crush_the_Kuularists }
-		prerequisite = { focus = TAN_Arrest_Oiun_Danchay }
+		id = TAN_Removal_the_Opposition
+		icon = GFX_focus_SOV_the_last_purge
+		prerequisite = { focus = TAN_Control_the_Kurul }
 
-		x = 0
+		x = -3
+		y = 2
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Target_Churmit_Dazhy
+		icon = GFX_focus_NOR_arrest_quisling
+		prerequisite = { focus = TAN_Arrest_Adyg_Tiluliush_Kemchik_Ool focus = TAN_Arrest_Kara_Sal_Pirinlei }
+		prerequisite = { focus = TAN_Removal_the_Opposition }
+
+		x = -1
 		y = 3
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -591,9 +762,9 @@ focus_tree = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 		id = TAN_The_Case_of_Nine
 		icon = GFX_focus_SOV_military_purge
-		prerequisite = { focus = TAN_Arrest_the_Opposition }
+		prerequisite = { focus = TAN_Target_Churmit_Dazhy }
 
-		x = 0
+		x = -1
 		y = 4
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -615,7 +786,7 @@ focus_tree = {
 		icon = GFX_focus_generic_communist_industry
 		prerequisite = { focus = TAN_The_Case_of_Nine }
 
-		x = -2
+		x = -3
 		y = 5
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -638,7 +809,7 @@ focus_tree = {
 		icon = GFX_focus_SWE_hygienic_housing
 		prerequisite = { focus = TAN_Collectivation }
 
-		x = -4
+		x = -3
 		y = 6
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -661,7 +832,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_military_purge
 		prerequisite = { focus = TAN_Collectivation }
 
-		x = -2
+		x = -1
 		y = 6
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -684,7 +855,7 @@ focus_tree = {
 		icon = GFX_focus_generic_modernize_industry
 		prerequisite = { focus = TAN_Settle_the_Nomads }
 
-		x = -4
+		x = -3
 		y = 7
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -708,30 +879,8 @@ focus_tree = {
 		prerequisite = { focus = TAN_Sedentarization }
 		prerequisite = { focus = TAN_Establish_the_Arkhats }
 
-		x = -2
+		x = -1
 		y = 9
-		relative_position_id = TAN_Consolidating_Power
-		cost = 10
-		
-		available_if_capitulated = no
-		bypass = {
-
-		}
-		available = {
-
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-	search_filters = { FOCUS_FILTER_POLITICAL }
-		id = TAN_Health_Reforms
-		icon = GFX_focus_SOV_military_purge
-		prerequisite = { focus = TAN_Sedentarization }
-
-		x = -6
-		y = 8
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
 		
@@ -753,7 +902,7 @@ focus_tree = {
 		icon = GFX_focus_ARG_capitalize_the_beef_industry
 		prerequisite = { focus = TAN_Collectivation }
 
-		x = 0
+		x = 1
 		y = 6
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -776,7 +925,7 @@ focus_tree = {
 		prerequisite = { focus = TAN_Collectivize_the_Herds }
 		mutually_exclusive = { focus = TAN_Eliminate_the_Herders }
 
-		x = -1
+		x = 0
 		y = 7
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -798,7 +947,7 @@ focus_tree = {
 		icon = GFX_focus_generic_workers_and_farmers_rise
 		prerequisite = { focus = TAN_Collaborate_with_the_Herders focus = TAN_Eliminate_the_Herders }
 
-		x = 0
+		x = 1
 		y = 8
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -821,7 +970,7 @@ focus_tree = {
 		prerequisite = { focus = TAN_Collectivize_the_Herds }
 		mutually_exclusive = { focus = TAN_Collaborate_with_the_Herders }
 
-		x = 1
+		x = 2
 		y = 7
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -843,8 +992,30 @@ focus_tree = {
 		icon = GFX_focus_SOV_military_purge
 		prerequisite = { focus = TAN_The_Case_of_Nine }
 
-		x = 2
+		x = 4
 		y = 5
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_The_Purge_of_1940
+		icon = GFX_focus_SOV_military_purge
+		prerequisite = { focus = TAN_Appoint_Khertek_Anchimaa_Toka }
+
+		x = 4
+		y = 6
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
 		
