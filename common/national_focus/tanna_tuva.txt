@@ -17,7 +17,7 @@ focus_tree = {
 		
 		modifier = {
 			add = 10
-			tag = TAN
+			tag = XXX
 		}
 	}
 	

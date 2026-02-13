@@ -49,12 +49,237 @@ focus_tree = {
 
 		}
 	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Soviet_Relations
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = TAN_Consolidating_Power }
+		x = 13
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Mongolian_Relations
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = TAN_Consolidating_Power }
+		x = 17
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Das_Dug_Mountain_Dispute
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = TAN_Mongolian_Relations }
+		x = 16
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Expand_the_Salt_Mines
+		icon = GFX_focus_generic_mining_industry
+		prerequisite = { focus = TAN_Das_Dug_Mountain_Dispute }
+		x = 16
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Renew_the_Tuvan_Soviet_Friendship_Treaty
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = TAN_Soviet_Relations }
+		x = 12
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Invite_Soviet_Advisors
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = TAN_Renew_the_Tuvan_Soviet_Friendship_Treaty }
+		x = 12
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Send_Tuvan_Students_Abroad
+		icon = GFX_focus_NOR_moscows_education_centers
+		prerequisite = { focus = TAN_Soviet_Relations }
+		x = 14
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Closer_to_Moscow
+		icon = GFX_focus_ARG_centralize_power
+		prerequisite = { focus = TAN_Invite_Soviet_Advisors focus = TAN_The_Case_of_Nine }
+		x = 12
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Industrilize_Kyzyl
+		icon = GFX_SOV_develop_the_urals_ccp_2d_sov_compatibility
+		prerequisite = { focus = TAN_The_Chairmans_Speech }
+		x = 32
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Open_Factories
+		icon = GFX_SOV_develop_the_urals_ccp_2d_sov_compatibility
+		prerequisite = { focus = TAN_Industrilize_Kyzyl }
+		x = 32
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Push_the_Reforms
+		icon = GFX_focus_ARG_centralize_power
+		prerequisite = { focus = TAN_The_Chairmans_Speech }
+		mutually_exclusive = { focus = TAN_Consolidating_Power }
+		x = 24
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
 
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 		id = TAN_Consolidating_Power
 		icon = GFX_focus_ARG_centralize_power
 		prerequisite = { focus = TAN_The_Chairmans_Speech }
+		mutually_exclusive = { focus = TAN_Push_the_Reforms }
 		x = 7
 		y = 1
 		cost = 10
@@ -114,6 +339,53 @@ focus_tree = {
 
 		}
 	}
+
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Propaganda_Effort
+		icon = GFX_focus_RAJ_a_policy_of_silence
+		prerequisite = { focus = TAN_Deepen_NKVD_Precense focus = TAN_Invite_Soviet_Advisors }
+
+		x = 3
+		y = 4
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Postage_Stamps
+		icon = GFX_focus_RAJ_a_policy_of_silence
+		prerequisite = { focus = TAN_Invite_Soviet_Advisors }
+
+		x = 7
+		y = 4
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 		id = TAN_Arrest_Oiun_Danchay
@@ -164,8 +436,98 @@ focus_tree = {
 		icon = GFX_focus_smiling_buddha
 		prerequisite = { focus = TAN_Control_the_Kurul }
 
-		x = -3
+		x = -4
 		y = 2
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Soviet_Education
+		icon = GFX_focus_NOR_moscows_education_centers
+		prerequisite = { focus = TAN_Restrict_the_Religious }
+		mutually_exclusive = { focus = TAN_Countinue_Monestary_Schools }
+
+		x = -5
+		y = 3
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_The_Revolutionary_Youth
+		icon = GFX_focus_AUS_union_of_danubian_socialist_republics
+		prerequisite = { focus = TAN_Soviet_Education focus = TAN_Countinue_Monestary_Schools }
+
+		x = -5
+		y = 4
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Education_Reforms
+		icon = GFX_focus_FIN_socialist_welfare
+		prerequisite = { focus = TAN_Countinue_Monestary_Schools focus = TAN_Soviet_Education }
+
+		x = -3
+		y = 4
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Countinue_Monestary_Schools
+		icon = GFX_focus_research
+		prerequisite = { focus = TAN_Restrict_the_Religious }
+		mutually_exclusive = { focus = TAN_Soviet_Education }
+
+		x = -3
+		y = 3
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
 		
@@ -249,12 +611,218 @@ focus_tree = {
 	}
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
-		id = TAN_Collectivation_Again
-		icon = GFX_focus_SOV_military_purge
+		id = TAN_Collectivation
+		icon = GFX_focus_generic_communist_industry
 		prerequisite = { focus = TAN_The_Case_of_Nine }
 
 		x = -2
 		y = 5
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Settle_the_Nomads
+		icon = GFX_focus_SWE_hygienic_housing
+		prerequisite = { focus = TAN_Collectivation }
+
+		x = -4
+		y = 6
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Replace_Religion
+		icon = GFX_focus_SOV_military_purge
+		prerequisite = { focus = TAN_Collectivation }
+
+		x = -2
+		y = 6
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Sedentarization
+		icon = GFX_focus_generic_modernize_industry
+		prerequisite = { focus = TAN_Settle_the_Nomads }
+
+		x = -4
+		y = 7
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Implement_Quotas
+		icon = GFX_focus_SOV_military_purge
+		prerequisite = { focus = TAN_Sedentarization }
+		prerequisite = { focus = TAN_Establish_the_Arkhats }
+
+		x = -2
+		y = 9
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Health_Reforms
+		icon = GFX_focus_SOV_military_purge
+		prerequisite = { focus = TAN_Sedentarization }
+
+		x = -6
+		y = 8
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Collectivize_the_Herds
+		icon = GFX_focus_ARG_capitalize_the_beef_industry
+		prerequisite = { focus = TAN_Collectivation }
+
+		x = 0
+		y = 6
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Collaborate_with_the_Herders
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = TAN_Collectivize_the_Herds }
+		mutually_exclusive = { focus = TAN_Eliminate_the_Herders }
+
+		x = -1
+		y = 7
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Establish_the_Arkhats
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		prerequisite = { focus = TAN_Collaborate_with_the_Herders focus = TAN_Eliminate_the_Herders }
+
+		x = 0
+		y = 8
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Eliminate_the_Herders
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = TAN_Collectivize_the_Herds }
+		mutually_exclusive = { focus = TAN_Collaborate_with_the_Herders }
+
+		x = 1
+		y = 7
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
 		
