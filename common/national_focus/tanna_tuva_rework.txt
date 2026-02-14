@@ -54,7 +54,7 @@ focus_tree = {
 		id = TAN_Soviet_Relations
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = TAN_Consolidating_Power }
-		x = 13
+		x = 13.5
 		y = 2
 		cost = 10
 		
@@ -74,7 +74,7 @@ focus_tree = {
 		id = TAN_Mongolian_Relations
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = TAN_Consolidating_Power }
-		x = 17
+		x = 19
 		y = 2
 		cost = 10
 		
@@ -94,7 +94,27 @@ focus_tree = {
 		id = TAN_Das_Dug_Mountain_Dispute
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = TAN_Mongolian_Relations }
-		x = 16
+		x = 18
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Delegation_to_Mongolia
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = TAN_Mongolian_Relations }
+		x = 20
 		y = 3
 		cost = 10
 		
@@ -114,7 +134,7 @@ focus_tree = {
 		id = TAN_Expand_the_Salt_Mines
 		icon = GFX_focus_generic_mining_industry
 		prerequisite = { focus = TAN_Das_Dug_Mountain_Dispute }
-		x = 16
+		x = 18
 		y = 4
 		cost = 10
 		
@@ -174,8 +194,68 @@ focus_tree = {
 		id = TAN_Send_Tuvan_Students_Abroad
 		icon = GFX_focus_NOR_moscows_education_centers
 		prerequisite = { focus = TAN_Soviet_Relations }
-		x = 14
+		x = 15
 		y = 3
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Kyzyl_Communist_University
+		icon = GFX_focus_research
+		prerequisite = { focus = TAN_Send_Tuvan_Students_Abroad }
+		x = 16
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Soviet_Radio_Experts
+		icon = GFX_focus_research
+		prerequisite = { focus = TAN_Send_Tuvan_Students_Abroad }
+		x = 14
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Kyzyl_Radio
+		icon = GFX_focus_research
+		prerequisite = { focus = TAN_Soviet_Radio_Experts }
+		x = 14
+		y = 5
 		cost = 10
 		
 		available_if_capitulated = no
@@ -193,8 +273,9 @@ focus_tree = {
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 		id = TAN_Closer_to_Moscow
-		icon = GFX_focus_ARG_centralize_power
+		icon = GFX_focus_SOV_third_rome
 		prerequisite = { focus = TAN_Invite_Soviet_Advisors focus = TAN_The_Case_of_Nine }
+		mutually_exclusive = { focus = TAN_Closer_to_Mongolia }
 		x = 12
 		y = 6
 		cost = 10
@@ -213,9 +294,29 @@ focus_tree = {
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 		id = TAN_Adopt_Cyrillic
-		icon = GFX_focus_ARG_centralize_power
+		icon = GFX_focus_hol_the_foundations_of_defense
 		prerequisite = { focus = TAN_Closer_to_Moscow }
-		x = 12
+		x = 15
+		y = 9
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_The_Great_Patriotic_War
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		prerequisite = { focus = TAN_Closer_to_Moscow }
+		x = 10
 		y = 7
 		cost = 10
 		
@@ -232,11 +333,10 @@ focus_tree = {
 	}
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
-		id = TAN_Join_the_USSR
-		icon = GFX_focus_ARG_centralize_power
-		prerequisite = { focus = TAN_Adopt_Cyrillic }
-		mutually_exclusive = { focus = TAN_Autonomous_Oblast}
-		x = 11
+		id = TAN_Expand_the_Tuvan_Army
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = TAN_The_Great_Patriotic_War }
+		x = 10
 		y = 8
 		cost = 10
 		
@@ -253,12 +353,216 @@ focus_tree = {
 	}
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
-		id = TAN_Autonomous_Oblast
+		id = TAN_Expand_the_Calvary_Brigade
+		icon = GFX_focus_generic_army_doctrines_2
+		prerequisite = { focus = TAN_Expand_the_Tuvan_Army }
+		x = 10
+		y = 9
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Mechanized_Division
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		prerequisite = { focus = TAN_Expand_the_Calvary_Brigade }
+		x = 10
+		y = 10
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Expand_Tuvan_Arms_Industry
 		icon = GFX_focus_ARG_centralize_power
+		prerequisite = { focus = TAN_The_Great_Patriotic_War }
+		x = 12
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Donate_Gold_Reserves
+		icon = GFX_focus_ARG_centralize_power
+		prerequisite = { focus = TAN_Expand_Tuvan_Arms_Industry }
+		x = 12
+		y = 9
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Expand_Material_Donations
+		icon = GFX_focus_generic_reinforcing_the_supply_network
+		prerequisite = { focus = TAN_Donate_Gold_Reserves }
+		x = 12
+		y = 10
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Victory
+		icon = GFX_focus_ARG_centralize_power
+		prerequisite = { focus = TAN_Expand_Animal_Donations focus = TAN_Mechanized_Division focus = TAN_Expand_Material_Donations }
+		mutually_exclusive = { focus = TAN_Defeat }
+		x = 9
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Defeat
+		icon = GFX_focus_ARG_centralize_power
+		prerequisite = { focus = TAN_Expand_Animal_Donations focus = TAN_Mechanized_Division focus = TAN_Expand_Material_Donations }
+		mutually_exclusive = { focus = TAN_Victory }
+		x = 11
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Begin_Animal_Donations
+		icon = GFX_focus_CHL_focus_on_cattle_and_wool
+		prerequisite = { focus = TAN_The_Great_Patriotic_War }
+		x = 8
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Expand_Animal_Donations
+		icon = GFX_focus_FIN_utilize_the_sami
+		prerequisite = { focus = TAN_Begin_Animal_Donations }
+		prerequisite = { focus = TAN_Establish_the_Arkhats }
+		x = 8
+		y = 10
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Join_the_USSR
+		icon = GFX_focus_SOV_socialism_in_one_country
+		prerequisite = { focus = TAN_Adopt_Cyrillic }
+		mutually_exclusive = { focus = TAN_Autonomous_Oblast}
+		x = 14
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Autonomous_Oblast
+		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { focus = TAN_Adopt_Cyrillic }
 		mutually_exclusive = { focus = TAN_Join_the_USSR}
-		x = 13
-		y = 8
+		x = 16
+		y = 11
 		cost = 10
 		
 		available_if_capitulated = no
@@ -276,9 +580,10 @@ focus_tree = {
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 		id = TAN_Closer_to_Mongolia
-		icon = GFX_focus_ARG_centralize_power
+		icon = GFX_focus_generic_attack_mongolia
 		prerequisite = { focus = TAN_Mongolian_Relations }
-		x = 17
+		mutually_exclusive = { focus = TAN_Closer_to_Moscow }
+		x = 19
 		y = 6
 		cost = 10
 		
@@ -316,10 +621,10 @@ focus_tree = {
 	}
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
-		id = TAN_Open_Factories
+		id = TAN_Kyzyl_Factories_Program
 		icon = GFX_SOV_develop_the_urals_ccp_2d_sov_compatibility
 		prerequisite = { focus = TAN_Industrilize_Kyzyl }
-		x = 32
+		x = 30
 		y = 2
 		cost = 10
 		
@@ -826,28 +1131,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-	search_filters = { FOCUS_FILTER_POLITICAL }
-		id = TAN_Replace_Religion
-		icon = GFX_focus_SOV_military_purge
-		prerequisite = { focus = TAN_Collectivation }
-
-		x = -1
-		y = 6
-		relative_position_id = TAN_Consolidating_Power
-		cost = 10
-		
-		available_if_capitulated = no
-		bypass = {
-
-		}
-		available = {
-
-		}
-		completion_reward = {
-
-		}
-	}
 
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
@@ -879,7 +1162,7 @@ focus_tree = {
 		prerequisite = { focus = TAN_Sedentarization }
 		prerequisite = { focus = TAN_Establish_the_Arkhats }
 
-		x = -1
+		x = -2
 		y = 9
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -902,7 +1185,7 @@ focus_tree = {
 		icon = GFX_focus_ARG_capitalize_the_beef_industry
 		prerequisite = { focus = TAN_Collectivation }
 
-		x = 1
+		x = 0
 		y = 6
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -925,7 +1208,7 @@ focus_tree = {
 		prerequisite = { focus = TAN_Collectivize_the_Herds }
 		mutually_exclusive = { focus = TAN_Eliminate_the_Herders }
 
-		x = 0
+		x = -1
 		y = 7
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -947,7 +1230,7 @@ focus_tree = {
 		icon = GFX_focus_generic_workers_and_farmers_rise
 		prerequisite = { focus = TAN_Collaborate_with_the_Herders focus = TAN_Eliminate_the_Herders }
 
-		x = 1
+		x = 0
 		y = 8
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -970,7 +1253,7 @@ focus_tree = {
 		prerequisite = { focus = TAN_Collectivize_the_Herds }
 		mutually_exclusive = { focus = TAN_Collaborate_with_the_Herders }
 
-		x = 2
+		x = 1
 		y = 7
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -992,7 +1275,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_military_purge
 		prerequisite = { focus = TAN_The_Case_of_Nine }
 
-		x = 4
+		x = 2
 		y = 5
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
@@ -1010,11 +1293,11 @@ focus_tree = {
 	}
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
-		id = TAN_The_Purge_of_1940
+		id = TAN_The_Gradual_Purge
 		icon = GFX_focus_SOV_military_purge
 		prerequisite = { focus = TAN_Appoint_Khertek_Anchimaa_Toka }
 
-		x = 4
+		x = 2
 		y = 6
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
