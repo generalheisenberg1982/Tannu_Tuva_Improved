@@ -1,0 +1,3349 @@
+focus_tree = {
+	id = Xinjiang_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = TAN
+		}
+	}
+
+	continuous_focus_position = { x = 55 y = 1600 }
+
+	default = no
+
+	focus = {
+		id = SIK_reach_out_to_mao
+		icon = GFX_focus_generic_befriend_the_chinese_soviet
+		x = 8
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_maintain_soviet_relations
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 30
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_cooperate_with_china
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		x = 46
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_invite_ccp_intellectuals
+		icon = GFX_focus_JAP_the_uno_school_of_economics
+		x = 8
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_reach_out_to_mao
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Settle_the_Xinjiang_Mongolia_Dispute
+		icon = GFX_focus_generic_befriend_mongolia
+		x = 14
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_reach_out_to_mao
+		}
+		prerequisite = { 
+			focus = SIK_maintain_soviet_relations
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Bridge_the_Gap
+		icon = GFX_focus_SOV_the_road_of_life
+		x = 12
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_reach_out_to_mao
+		}
+		prerequisite = { 
+			focus = SIK_maintain_soviet_relations
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Close_the_Gap
+		icon = GFX_focus_generic_attack_turkey
+		x = 12
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_Bridge_the_Gap
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_expand_soviet_loans
+		icon = GFX_goal_generic_forceful_treaty
+		x = 17
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_maintain_soviet_relations
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_join_the_cspu
+		icon = GFX_focus_generic_soviet_politics
+		x = 20
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_maintain_soviet_relations
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Establish_a_Soviet_Embassy
+		icon = GFX_goal_support_communism
+		x = 20
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_join_the_cspu
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_soviet_arms_aid
+		icon = GFX_focus_PHI_battalion_combat_teams
+		x = 25
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_maintain_soviet_relations
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_expand_the_xinjiang_soviet_highways
+		icon = GFX_focus_generic_improve_roads
+		x = 32
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_maintain_soviet_relations
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_countinue_the_resource_expeditions
+		icon = GFX_focus_generic_resource_extraction
+		x = 35
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_maintain_soviet_relations
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_dihua_hosi_road
+		icon = GFX_focus_generic_road_investment
+		x = 39
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_maintain_soviet_relations
+			focus = SIK_cooperate_with_china
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_join_the_ccp
+		icon = GFX_focus_PRC_assume_leadership
+		x = 2
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_invite_ccp_intellectuals
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Expand_the_Nanliang_Third_Guesthouse
+		icon = GFX_focus_PRC_bolshevik_urbanization_1
+		x = 8
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_invite_ccp_intellectuals
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Empower_the_West_Route_Army
+		icon = GFX_focus_PRC_hundred_regiments_offensive
+		x = 1
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_join_the_ccp
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_administrative_reforms
+		icon = GFX_focus_PRC_construct_the_banqiao_dam
+		x = 5
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_invite_ccp_intellectuals
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Assign_Mao_Zemin
+		icon = GFX_focus_PRC_the_first_premier
+		x = 10
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_invite_ccp_intellectuals
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Reorganize_the_National_Bank
+		icon = GFX_focus_PRC_promote_paper_bills
+		x = 10
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_Assign_Mao_Zemin
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_the_three_year_plan
+		icon = GFX_focus_generic_stalinist_industry
+		x = 17
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_expand_soviet_loans
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_arms_workshops
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 23
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_soviet_arms_aid
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_invite_soviet_advisors
+		icon = GFX_focus_PRC_invite_soviet_general
+		x = 27
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_soviet_arms_aid
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Taskent_Dihua_Rail
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 30
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_expand_the_xinjiang_soviet_highways
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Purchase_Trains
+		icon = GFX_focus_generic_railroad
+		x = 31
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_Taskent_Dihua_Rail
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Xinjiang_Rail_Network
+		icon = GFX_focus_IRQ_train
+		x = 30
+		y = 5
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_Taskent_Dihua_Rail
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_highway_ore_extraction_scheme
+		icon = GFX_focus_generic_steel_mill
+		x = 33 
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_countinue_the_resource_expeditions
+			focus = SIK_expand_the_xinjiang_soviet_highways
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_dushanzi_oil_project
+		icon = GFX_goal_generic_oil_refinery
+		x = 37
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_countinue_the_resource_expeditions
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_expand_the_flow_of_arms_to_roc
+		icon = GFX_focus_generic_reinforcing_the_supply_network
+		x = 40
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_dihua_hosi_road
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_The_Xinjiang_Volunteer_Army
+		icon = GFX_focus_CHI_military_affairs_commission
+		x = 44
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_cooperate_with_china
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Strike_Tibet
+		icon = GFX_goal_generic_major_war
+		x = 42
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_cooperate_with_china
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_invite_nationalist_diplomats
+		icon = GFX_focus_CHI_mend_the_rift_with_hu
+		x = 46
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_cooperate_with_china
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_assign_cultural_posts
+		icon = GFX_focus_PRC_cooperate_with_ulanhu
+		x = 4
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_administrative_reforms
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_assign_provincial_posts
+		icon = GFX_focus_PRC_he_long_second_army
+		x = 6
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_administrative_reforms
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_improved_budgeting
+		icon = GFX_focus_generic_reduce_unneccessary_expenditure
+		x = 8
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_Reorganize_the_National_Bank
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_improving_tax_collection
+		icon = GFX_focus_RAJ_war_taxes
+		x = 12
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_Reorganize_the_National_Bank
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_bring_machine_equipment
+		icon = GFX_goal_generic_production2
+		x = 15
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_the_three_year_plan
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_send_students_abroad
+		icon = GFX_focus_research
+		x = 19
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_the_three_year_plan
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_aviation_development
+		icon = GFX_focus_generic_aircraft_production
+		x = 22
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_arms_workshops
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_mechanization
+		icon = GFX_focus_generic_mechanized
+		x = 24
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_arms_workshops
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_integrate_the_white_russians
+		icon = GFX_focus_SOV_the_true_tsars
+		x = 26
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_invite_soviet_advisors
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_invite_the_nkvd
+		icon = GFX_focus_JAP_learn_from_the_nkvd
+		x = 28
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_invite_soviet_advisors
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Expand_the_Refinery
+		icon = GFX_focus_PER_increase_oil_sales
+		x = 36
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_dushanzi_oil_project
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_expand_the_oil_expeditions
+		icon = GFX_goal_generic_construction2
+		x = 38
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_dushanzi_oil_project
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_expanded_propaganda
+		icon = GFX_focus_generic_communist
+		x = 4
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_assign_cultural_posts
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_supress_the_old_upper_class
+		icon = GFX_focus_PRC_land_revolution_expedited
+		x = 6
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_assign_provincial_posts
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_provionsal_finances
+		icon = GFX_focus_mex_privatisation
+		x = 10
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_Reorganize_the_National_Bank
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_industrilization_programs
+		icon = GFX_focus_CHI_planned_economy
+		x = 15
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_bring_machine_equipment
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_reorganize_the_xinjiang_daily
+		icon = GFX_focus_generic_printing_press
+		x = 19
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_send_students_abroad
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_standardization
+		icon = GFX_focus_PRC_army_command
+		x = 23
+		y = 6
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_aviation_development
+			focus = SIK_mechanization
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_remove_the_disloyal
+		icon = GFX_focus_SOV_the_last_purge
+		x = 28
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_invite_the_nkvd
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_mines_at_coal_tar_mountain
+		icon = GFX_focus_generic_coal_mining
+		x = 32
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_highway_ore_extraction_scheme
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_non_ferrous_and_rare_metals_company_in_sinkiang
+		icon = GFX_focus_generic_chromium
+		x = 34
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_highway_ore_extraction_scheme
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_yuman_oil_project
+		icon = GFX_goal_generic_oil_refinery
+		x = 39
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_dihua_hosi_road
+			focus = SIK_expand_the_oil_expeditions
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Expand_Communist_Influence
+		icon = GFX_focus_generic_spur_communist_revolutions
+		x = 39
+		y = 5
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_yuman_oil_project
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Strike_Gansu
+		icon = GFX_focus_generic_attack_turkey
+		x = 40
+		y = 6
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_Expand_Communist_Influence
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Strike_Qinghai
+		icon = GFX_focus_generic_attack_turkey
+		x = 38
+		y = 6
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_Expand_Communist_Influence
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Strike_the_Ejin_Banner
+		icon = GFX_focus_generic_attack_mongolia
+		x = 39
+		y = 7
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_Expand_Communist_Influence
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_nationalize_projects
+		icon = GFX_focus_generic_annex_country
+		x = 45
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_invite_nationalist_diplomats
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_remove_communist_influence
+		icon = GFX_focus_SOV_military_purge
+		x = 47
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_invite_nationalist_diplomats
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_the_xinjiang_chinese_soviet
+		icon = GFX_focus_generic_befriend_the_chinese_soviet
+		x = 2
+		y = 5
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_join_the_ccp
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_effective_administration
+		icon = GFX_focus_generic_improve_the_administration
+		x = 8
+		y = 5
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_improving_tax_collection
+			focus = SIK_improved_budgeting
+			focus = SIK_provionsal_finances
+			focus = SIK_expanded_propaganda
+			focus = SIK_supress_the_old_upper_class
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Expand_the_Telegraph_System
+		icon = GFX_focus_AFG_telegraph
+		x = 14
+		y = 5
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_industrilization_programs
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_invite_technical_experts
+		icon = GFX_focus_generic_industrial_experts
+		x = 16
+		y = 5
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_reorganize_the_xinjiang_daily
+			focus = SIK_industrilization_programs
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_soviet_education_reform
+		icon = GFX_focus_NOR_moscows_education_centers
+		x = 19
+		y = 5
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_reorganize_the_xinjiang_daily
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Question_of_Language
+		icon = GFX_focus_NOR_moscows_education_centers
+		x = 18
+		y = 6
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_soviet_education_reform
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_send_officers_abroad
+		icon = GFX_focus_CHI_popular_army
+		x = 27
+		y = 6
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_invite_soviet_advisors
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_expand_xinjiang_soviet_tin_agr
+		icon = GFX_focus_generic_treaty
+		x = 33
+		y = 6
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_highway_ore_extraction_scheme
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_soviet_uranium_mining
+		icon = GFX_focus_generic_uranium_extraction
+		x = 34
+		y = 5
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_non_ferrous_and_rare_metals_company_in_sinkiang
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_expel_soviet_advisors
+		icon = GFX_focus_CHI_arrest_the_seven_gentlemen
+		x = 47
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_remove_communist_influence
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_under_the_ccp
+		icon = GFX_focus_PRC_long_march_to_recovery
+		x = 0
+		y = 6
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_the_xinjiang_chinese_soviet
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_under_the_sheng_shecai
+		icon = GFX_focus_PRC_guotao_ascends
+		x = 4
+		y = 6
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_the_xinjiang_chinese_soviet
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_electrification
+		icon = GFX_focus_ARG_develop_the_electricity_sector
+		x = 15
+		y = 6
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_invite_technical_experts
+			focus = SIK_Expand_the_Telegraph_System
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_improve_xinjiang_university
+		icon = GFX_focus_PRC_form_the_yanan_university
+		x = 20
+		y = 6
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_soviet_education_reform
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_land_value_tax
+		icon = GFX_Unknown
+		x = 1
+		y = 7
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_under_the_ccp
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_land_redistribution
+		icon = GFX_focus_generic_land_redistribution
+		x = 3
+		y = 7
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_under_the_ccp
+			focus = SIK_under_the_sheng_shecai
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Sway_the_New_Barracks
+		icon = GFX_goal_generic_political_pressure
+		x = 6
+		y = 7
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_under_the_sheng_shecai
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_xinjiang_reborn
+		icon = GFX_focus_generic_economic_recovery
+		x = 17
+		y = 7
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_electrification
+			focus = SIK_improve_xinjiang_university
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_red_xinjiang_army
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		x = 25
+		y = 7
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_send_officers_abroad
+			focus = SIK_standardization
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_finalize_the_concessions
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 33
+		y = 7
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_expand_xinjiang_soviet_tin_agr
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_official_join_the_prc
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+		x = 0
+		y = 9
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_under_the_ccp
+		}
+		mutually_exclusive = {
+			focus = SIK_chairman_sheng
+			focus = SIK_xinjiangs_peopls_republic
+			focus = SIK_autonomy
+			focus = SIK_join_the_soviet_union
+			focus = SIK_Rejoin_the_ROC
+			focus = SIK_Power_Struggle
+			focus = SIK_official_join_the_prc
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_unified_army_structure
+		icon = GFX_focus_PRC_army_doctrines
+		x = 2
+		y = 8
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_land_value_tax
+			focus = SIK_land_redistribution
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_chairman_sheng
+		icon = GFX_Unknown
+		x = 4
+		y = 9
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_under_the_sheng_shecai
+		}
+		mutually_exclusive = {
+			focus = SIK_xinjiangs_peopls_republic
+			focus = SIK_autonomy
+			focus = SIK_join_the_soviet_union
+			focus = SIK_Rejoin_the_ROC
+			focus = SIK_Power_Struggle
+			focus = SIK_official_join_the_prc
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_xinjiangs_peopls_republic
+		icon = GFX_Unknown
+		x = 24
+		y = 9
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_red_xinjiang_army
+			focus = SIK_xinjiang_reborn
+		}
+		mutually_exclusive = {
+			focus = SIK_chairman_sheng
+			focus = SIK_autonomy
+			focus = SIK_join_the_soviet_union
+			focus = SIK_Rejoin_the_ROC
+			focus = SIK_Power_Struggle
+			focus = SIK_official_join_the_prc
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_autonomy
+		icon = GFX_Unknown
+		x = 30
+		y = 9
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_red_xinjiang_army
+		}
+		mutually_exclusive = {
+			focus = SIK_chairman_sheng
+			focus = SIK_autonomy
+			focus = SIK_join_the_soviet_union
+			focus = SIK_Rejoin_the_ROC
+			focus = SIK_Power_Struggle
+			focus = SIK_official_join_the_prc
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_join_the_soviet_union
+		icon = GFX_Unknown
+		x = 36
+		y = 9
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_finalize_the_concessions
+			focus = SIK_red_xinjiang_army
+		}
+		mutually_exclusive = { 
+			focus = SIK_chairman_sheng
+			focus = SIK_xinjiangs_peopls_republic
+			focus = SIK_autonomy
+			focus = SIK_Rejoin_the_ROC
+			focus = SIK_Power_Struggle
+			focus = SIK_official_join_the_prc
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Reapproach_the_Central_Government
+		icon = GFX_focus_CHI_tour_the_west
+		x = 46
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_nationalize_projects
+			focus = SIK_expel_soviet_advisors
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Welcomed_with_Open_Arms
+		icon = GFX_focus_CHI_revive_the_western_hills_group
+		x = 46
+		y = 5
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_Reapproach_the_Central_Government
+		}
+		mutually_exclusive = {
+			focus = SIK_Sheng_the_Traitor
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Political_Allignment
+		icon = GFX_focus_CHI_revise_the_national_curriculum
+		x = 46
+		y = 6
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_Welcomed_with_Open_Arms
+		}
+		mutually_exclusive = {
+
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Rejoin_the_ROC
+		icon = GFX_focus_CHI_lay_the_foundation_for_a_united_china
+		x = 44
+		y = 9
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_Political_Allignment
+		}
+		mutually_exclusive = {
+			focus = SIK_chairman_sheng
+			focus = SIK_xinjiangs_peopls_republic
+			focus = SIK_autonomy
+			focus = SIK_join_the_soviet_union
+			focus = SIK_Power_Struggle
+			focus = SIK_official_join_the_prc
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Power_Struggle
+		icon = GFX_Unknown
+		x = 48
+		y = 9
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_Political_Allignment
+		}
+		mutually_exclusive = {
+			focus = SIK_chairman_sheng
+			focus = SIK_xinjiangs_peopls_republic
+			focus = SIK_autonomy
+			focus = SIK_join_the_soviet_union
+			focus = SIK_Rejoin_the_ROC
+			focus = SIK_official_join_the_prc
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Sheng_the_Traitor
+		icon = GFX_focus_CHI_arrest_the _seven_gentlemen
+		x = 43
+		y = 5
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_Reapproach_the_Central_Government
+		}
+		mutually_exclusive = {
+			focus = SIK_Welcomed_with_Open_Arms
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_Desperate_Reapproachment
+		icon = GFX_Unknown
+		x = 43
+		y = 6
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_Sheng_the_Traitor
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_proclaim_the_reval_gov
+		icon = GFX_focus_PRC_move_capital
+		x = 4
+		y = 10
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_chairman_sheng
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIK_establish_ethnic_ssrs
+		icon = GFX_Unknown
+		x = 27
+		y = 10
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = SIK_xinjiangs_peopls_republic
+			focus = SIK_autonomy
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SIK_Power_to_the_Duban
+		icon = GFX_Unknown
+		x = 60
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+
+		}
+		mutually_exclusive = {
+		}
+
+		cost = 70
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		}
+		completion_reward = {
+		}
+	}
+}
