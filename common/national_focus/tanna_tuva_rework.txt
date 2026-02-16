@@ -46,14 +46,19 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			country_event = {
+				id = tanna_tuva.21
+			}
+			country_event = {
+				id = tanna_tuva.20
+			}
 		}
 	}
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 		id = TAN_Soviet_Relations
 		icon = GFX_focus_chi_mission_to_the_soviet_union
-		prerequisite = { focus = TAN_Consolidating_Power }
+		prerequisite = { focus = TAN_Consolidating_Power focus = TAN_Push_the_Reforms }
 		x = 13.5
 		y = 2
 		cost = 10
@@ -73,7 +78,7 @@ focus_tree = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 		id = TAN_Mongolian_Relations
 		icon = GFX_focus_chi_mission_to_the_soviet_union
-		prerequisite = { focus = TAN_Consolidating_Power }
+		prerequisite = { focus = TAN_Consolidating_Power focus = TAN_Push_the_Reforms }
 		x = 19
 		y = 2
 		cost = 10
@@ -641,6 +646,26 @@ focus_tree = {
 	}
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Wood_Processing
+		icon = GFX_SOV_develop_the_urals_ccp_2d_sov_compatibility
+		prerequisite = { focus = TAN_Industrilize_Kyzyl }
+		x = 30
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
 		id = TAN_Push_the_Reforms
 		icon = GFX_focus_ARG_centralize_power
 		prerequisite = { focus = TAN_The_Chairmans_Speech }
@@ -680,7 +705,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -775,7 +800,7 @@ focus_tree = {
 	}
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
-		id = TAN_Issue_the_Aksa
+		id = TAN_Issue_the_Soviet_Aksa
 		icon = GFX_focus_RAJ_a_policy_of_silence
 		prerequisite = { focus = TAN_Invite_Soviet_Advisors }
 
@@ -1162,8 +1187,52 @@ focus_tree = {
 		prerequisite = { focus = TAN_Sedentarization }
 		prerequisite = { focus = TAN_Establish_the_Arkhats }
 
-		x = -2
+		x = -3
 		y = 9
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_Failures_of_Collectivization
+		icon = GFX_focus_SOV_military_purge
+		prerequisite = { focus = TAN_Implement_Quotas }
+
+		x = -1
+		y = 10
+		relative_position_id = TAN_Consolidating_Power
+		cost = 10
+		
+		available_if_capitulated = no
+		bypass = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+	search_filters = { FOCUS_FILTER_POLITICAL }
+		id = TAN_The_Success_of_Collectivization
+		icon = GFX_focus_SOV_military_purge
+		prerequisite = { focus = TAN_Implement_Quotas }
+
+		x = -5
+		y = 10
 		relative_position_id = TAN_Consolidating_Power
 		cost = 10
 		
