@@ -1,48 +1,70 @@
-@METER_X = 28
-@KURUL_Y = 34
-@PUBLIC_Y = 138
-@LABEL_X = 28
-@LABEL_WIDTH = 440
+@KURUL_COLUMN_X = 30
+@PUBLIC_COLUMN_X = 258
+@KURUL_METER_X = 88
+@PUBLIC_METER_X = 298
+@KURUL_METER_Y = 52
+@PUBLIC_METER_Y = 40
+@LABEL_Y = 10
+@PERCENT_Y = 120
+@COLUMN_WIDTH = 210
 
 guiTypes = {
 
 	containerWindowType = {
 		name = "TAN_Toka_Consolidating_Power_GUI_window"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height = 240 }
+		size = { width = 100% height = 156 }
 
 		instantTextBoxType = {
 			name = "TAN_little_kurul_support_label"
-			position = { x = @LABEL_X y = 10 }
+			position = { x = @KURUL_COLUMN_X y = @LABEL_Y }
 			font = "hoi_18mbs"
 			text = TAN_little_kurul_support_label
-			format = left
-			maxWidth = @LABEL_WIDTH
+			format = center
+			maxWidth = @COLUMN_WIDTH
 		}
 
 		iconType = {
 			name = "TAN_little_kurul_support_meter"
 			spriteType = "GFX_TAN_Little_Kurul_Support"
-			position = { x = @METER_X y = @KURUL_Y }
-			frame = 2
+			position = { x = @KURUL_METER_X y = @KURUL_METER_Y }
+			frame = 1
 			pdx_tooltip = TAN_little_kurul_support_meter_tt
 		}
 
 		instantTextBoxType = {
+			name = "TAN_little_kurul_support_percent"
+			position = { x = @KURUL_COLUMN_X y = @PERCENT_Y }
+			font = "hoi_18mbs"
+			text = TAN_little_kurul_support_percent_text
+			format = center
+			maxWidth = @COLUMN_WIDTH
+		}
+
+		instantTextBoxType = {
 			name = "TAN_public_support_label"
-			position = { x = @LABEL_X y = 112 }
+			position = { x = @PUBLIC_COLUMN_X y = @LABEL_Y }
 			font = "hoi_18mbs"
 			text = TAN_public_support_label
-			format = left
-			maxWidth = @LABEL_WIDTH
+			format = center
+			maxWidth = @COLUMN_WIDTH
 		}
 
 		iconType = {
 			name = "TAN_public_support_meter"
 			spriteType = "GFX_TAN_Public_Support"
-			position = { x = @METER_X y = @PUBLIC_Y }
-			frame = 2
+			position = { x = @PUBLIC_METER_X y = @PUBLIC_METER_Y }
+			frame = 1
 			pdx_tooltip = TAN_public_support_meter_tt
+		}
+
+		instantTextBoxType = {
+			name = "TAN_public_support_percent"
+			position = { x = @PUBLIC_COLUMN_X y = @PERCENT_Y }
+			font = "hoi_18mbs"
+			text = TAN_public_support_percent_text
+			format = center
+			maxWidth = @COLUMN_WIDTH
 		}
 	}
 
