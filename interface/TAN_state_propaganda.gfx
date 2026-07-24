@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "TAN_GFX_sp_propaganda_bg"
+		texturefile = "gfx/interface/TAN_Propaganda_Folder/TAN_propaganda_bg.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_TAN_sp_propaganda_strip"
+		texturefile = "gfx/interface/TAN_Propaganda_Folder/TAN_propaganda_strip.dds"
+		legacy_lazy_load = no
+		noOfFrames = 26
+	}
+}

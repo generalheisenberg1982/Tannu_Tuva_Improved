@@ -1,420 +1,98 @@
-TAN_propaganda_campaigns = {
+TAN_state_propaganda_campaigns = {
 
-	TAN_propaganda_motherland_calls = { # ID = 3
+	TAN_sp_raise_tuvan_workers = {
+		priority = 1
+		icon = eng_propaganda_campaigns
+		days_remove = 70
+		days_re_enable = 45
+		cost = TAN_sp_raise_tuvan_workers_cost
+
+		allowed = { original_tag = TAN }
+		visible = { has_country_flag = TAN_state_propaganda_unlocked }
+		available = { TAN_sp_poster_slot_available = yes }
+
+		modifier = {
+			weekly_manpower = 500
+			training_time_army_factor = -0.05
+			conscription_factor = 0.05
+		}
+
+		complete_effect = {
+			set_variable = { TAN_sp_new_campaign = 3 }
+			TAN_sp_pick_campaign_slot = yes
+		}
+
+		remove_effect = {
+			set_variable = { TAN_sp_campaign_to_remove = 3 }
+			TAN_sp_reset_campaign_slot = yes
+			multiply_variable = { TAN_sp_raise_tuvan_workers_cost = TAN_sp_cost_increase }
+			custom_effect_tooltip = TAN_sp_campaign_cooldown_tt
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	TAN_sp_every_yurt_a_workshop = {
 		priority = 2
-
 		icon = eng_propaganda_campaigns
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 1
-				surrender_progress > 0.4
-			}
-			modifier = {
-				add = 10
-				has_manpower < 500000
-			}
-			modifier = {
-				factor = 0.1
-				check_variable = { TAN_propaganda_motherland_calls_cost > 30 } #Less likely to do it a third time
-			}
-			modifier = {
-				factor = 0.1
-				check_variable = { TAN_propaganda_motherland_calls_cost > 45 } #Even less likely to do it a fourth time
-			}
-			modifier = {
-				factor = 0
-				check_variable = { TAN_propaganda_motherland_calls_cost > 90 } #Shouldn't even consider doing it a fifth time
-			}
-		}
-
-		allowed = {
-			original_tag = TAN
-		}
-
-		available = {
-			TAN_propaganda_poster_slot_available = yes
-			####has_completed_focus = TAN_Tuvan_Volunteers
-		}
-
-		visible = {
-		}
-
 		days_remove = 70
-
 		days_re_enable = 45
+		cost = TAN_sp_every_yurt_a_workshop_cost
 
-		cost = 25
-
-		modifier = {
-			weekly_manpower = 750
-			training_time_factor = -0.15
-			minimum_training_level = -0.15
-		}
-
-		complete_effect = {
-			set_variable = { TAN_new_propaganda_campaign = 3 }
-			TAN_pick_propaganda_campaign_slot_effect = yes
-			TAN_achievement_propaganda_counter_effect = yes
-		}
-
-		remove_effect = {
-			set_variable = { TAN_propaganda_campaign_to_remove = 3 }
-			TAN_reset_propaganda_campaign_slot_effect = yes
-
-			# Okay this looks dumb I know but it's better than having to change 24 operations each time we feel like tweaking how propaganda campaign's cost escalates
-			set_variable = { TAN_propaganda_cost = TAN_propaganda_motherland_calls_cost }
-			TAN_increase_propaganda_campaign_cost_effect = yes
-			set_variable = { TAN_propaganda_motherland_calls_cost = TAN_propaganda_cost }
-			clear_variable = TAN_propaganda_cost
-
-			custom_effect_tooltip = TAN_propaganda_campaign_cooldown_tt
-		}
-	}
-
-	##Let us contruct infrastructure!
-
-	TAN_propaganda_victory_at_hand = { # ID = 4
-		priority = 3
-
-		icon = eng_propaganda_campaigns
-
-		ai_will_do = {
-			base = 1
-			modifier = {
-				factor = 0.1
-				check_variable = { TAN_propaganda_victory_at_hand_cost > 30 } #Less likely to do it a third time
-			}
-			modifier = {
-				factor = 0.1
-				check_variable = { TAN_propaganda_victory_at_hand_cost > 45 } #Even less likely to do it a fourth time
-			}
-			modifier = {
-				factor = 0
-				check_variable = { TAN_propaganda_victory_at_hand_cost > 90 } #Shouldn't even consider doing it a fifth time
-			}
-		}
-
-		allowed = {
-			original_tag = TAN
-		}
-
-		available = {
-			TAN_propaganda_poster_slot_available = yes
-
-			TAN_propaganda_victory_at_hand_available = yes
-		}
-
-		visible = {
-		}
-
-		days_remove = 70
-
-		days_re_enable = 45
-
-		cost = 25
-
-		modifier = {
-			production_speed_infrastructure_factor = 0.5 
-		}
-
-		complete_effect = {
-			set_variable = { TAN_new_propaganda_campaign = 4 }
-			TAN_pick_propaganda_campaign_slot_effect = yes
-			TAN_achievement_propaganda_counter_effect = yes
-		}
-
-		remove_effect = {
-			set_variable = { TAN_propaganda_campaign_to_remove = 4 }
-			TAN_reset_propaganda_campaign_slot_effect = yes
-
-			set_variable = { TAN_propaganda_cost = TAN_propaganda_victory_at_hand_cost }
-			TAN_increase_propaganda_campaign_cost_effect = yes
-			set_variable = { TAN_propaganda_victory_at_hand_cost = TAN_propaganda_cost }
-			clear_variable = TAN_propaganda_cost
-
-			custom_effect_tooltip = TAN_propaganda_campaign_cooldown_tt
-		}
-	}
-
-	##For the Homeland, For the Front
-
-	TAN_propaganda_defend_moscow = { # ID = 5
-		priority = 4
-
-		icon = eng_propaganda_campaigns
-
-		ai_will_do = {
-			base = 500
-			modifier = {
-				factor = 0.1
-				check_variable = { TAN_propaganda_defend_moscow_cost > 30 } #Less likely to do it a third time
-			}
-			modifier = {
-				factor = 0.1
-				check_variable = { TAN_propaganda_defend_moscow_cost > 45 } #Even less likely to do it a fourth time
-			}
-			modifier = {
-				factor = 0
-				check_variable = { TAN_propaganda_defend_moscow_cost > 90 } #Shouldn't even consider doing it a fifth time
-			}
-		}
-
-		allowed = {
-			original_tag = TAN
-		}
-
-		available = {
-			TAN_propaganda_poster_slot_available = yes
-			#### has_completed_focus = TAN_Tuvan_Volunteers
-		}
-
-		visible = {
-		}
-
-		days_remove = 70
-
-		days_re_enable = 45
-
-		cost = 25
-
-		modifier = {
-			army_attack_factor = 0.15
-			army_defence_factor = 0.15
-		}
-
-		complete_effect = {
-			set_variable = { TAN_new_propaganda_campaign = 5 }
-			TAN_pick_propaganda_campaign_slot_effect = yes
-			TAN_achievement_propaganda_counter_effect = yes
-
-		}
-
-		remove_effect = {
-
-			set_variable = { TAN_propaganda_campaign_to_remove = 5 }
-			TAN_reset_propaganda_campaign_slot_effect = yes
-
-			set_variable = { TAN_propaganda_cost = TAN_propaganda_defend_moscow_cost }
-			TAN_increase_propaganda_campaign_cost_effect = yes
-			set_variable = { TAN_propaganda_defend_moscow_cost = TAN_propaganda_cost }
-			clear_variable = TAN_propaganda_cost
-
-			custom_effect_tooltip = TAN_propaganda_campaign_cooldown_tt
-		}
-	}
-##To the Red Army, 10,000 strong men are going!
-	TAN_propaganda_fight_to_the_last = { # ID = 6
-		priority = 5
-
-		icon = eng_propaganda_campaigns
-
-		ai_will_do = {
-			base = 0.75
-			modifier = {
-				factor = 10
-				OR = {
-					AND = {
-						stockpile_ratio = {
-							archetype = train_equipment
-							ratio < 0.75
-						}
-						stockpile_ratio = {
-							archetype = motorized_equipment
-							ratio < 0.75
-						}
-					}
-					stockpile_ratio = {
-						archetype = convoy
-						ratio < 5
-					}
-				}
-			}
-			modifier = {
-				factor = 0.1
-				check_variable = { TAN_propaganda_fight_to_the_last_cost > 30 } #Less likely to do it a third time
-			}
-			modifier = {
-				factor = 0.1
-				check_variable = { TAN_propaganda_fight_to_the_last_cost > 45 } #Even less likely to do it a fourth time
-			}
-			modifier = {
-				factor = 0
-				check_variable = { TAN_propaganda_fight_to_the_last_cost > 90 } #Shouldn't even consider doing it a fifth time
-			}
-		}
-
-		allowed = {
-			original_tag = TAN
-		}
-
-		available = {
-			#### has_completed_focus = TAN_Tuvan_Volunteers
-		}
-
-		visible = {
-		}
-
-		days_remove = 70
-
-		days_re_enable = 45
-
-
-		cost = 25
-
-		modifier = {
-			army_org_factor = 0.05
-			out_of_supply_factor = -0.1
-			no_supply_grace = 70
-		}
-
-		complete_effect = {
-			set_variable = { TAN_new_propaganda_campaign = 6 }
-			TAN_pick_propaganda_campaign_slot_effect = yes
-			TAN_achievement_propaganda_counter_effect = yes
-		}
-
-		remove_effect = {
-			set_variable = { TAN_propaganda_campaign_to_remove = 6 }
-			TAN_reset_propaganda_campaign_slot_effect = yes
-
-			set_variable = { TAN_propaganda_cost = TAN_propaganda_fight_to_the_last_cost }
-			TAN_increase_propaganda_campaign_cost_effect = yes
-			set_variable = { TAN_propaganda_fight_to_the_last_cost = TAN_propaganda_cost }
-			clear_variable = TAN_propaganda_cost
-
-			custom_effect_tooltip = TAN_propaganda_campaign_cooldown_tt
-		}
-	}
-##Let’s fulfill the new livestock production goals of 1942!
-	TAN_propaganda_hit_of_hammer = { # ID = 7
-		priority = 6
-
-		icon = eng_propaganda_campaigns
-
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 0.1
-				check_variable = { TAN_propaganda_hit_of_hammer_cost > 30 } #Less likely to do it a third time
-			}
-			modifier = {
-				factor = 0.1
-				check_variable = { TAN_propaganda_hit_of_hammer_cost > 45 } #Even less likely to do it a fourth time
-			}
-			modifier = {
-				factor = 0
-				check_variable = { TAN_propaganda_hit_of_hammer_cost > 90 } #Shouldn't even consider doing it a fifth time
-			}
-		}
-
-		allowed = {
-			original_tag = TAN
-			has_completed_focus = TAN_End_Nomadic_Herding
-		}
-
-		available = {
-			TAN_propaganda_poster_slot_available = yes
-			#### has_completed_focus = TAN_Send_Military_Aid
-
-		}
-
-		visible = {
-		}
-
-		days_remove = 70
-
-		days_re_enable = 45
-
-		cost = 25
+		allowed = { original_tag = TAN }
+		visible = { has_country_flag = TAN_state_propaganda_unlocked }
+		available = { TAN_sp_poster_slot_available = yes }
 
 		modifier = {
 			industrial_capacity_factory = 0.05
-			consumer_goods_factor = -0.05
+			production_factory_efficiency_gain_factor = 0.10
+			consumer_goods_factor = -0.03
 		}
 
 		complete_effect = {
-			set_variable = { TAN_new_propaganda_campaign = 7 }
-			TAN_pick_propaganda_campaign_slot_effect = yes
-			TAN_achievement_propaganda_counter_effect = yes
+			set_variable = { TAN_sp_new_campaign = 4 }
+			TAN_sp_pick_campaign_slot = yes
 		}
 
 		remove_effect = {
-			set_variable = { TAN_propaganda_campaign_to_remove = 7 }
-			TAN_reset_propaganda_campaign_slot_effect = yes
-
-			set_variable = { TAN_propaganda_cost = TAN_propaganda_hit_of_hammer_cost }
-			TAN_increase_propaganda_campaign_cost_effect = yes
-			set_variable = { TAN_propaganda_hit_of_hammer_cost = TAN_propaganda_cost }
-			clear_variable = TAN_propaganda_cost
-
-			custom_effect_tooltip = TAN_propaganda_campaign_cooldown_tt
+			set_variable = { TAN_sp_campaign_to_remove = 4 }
+			TAN_sp_reset_campaign_slot = yes
+			multiply_variable = { TAN_sp_every_yurt_a_workshop_cost = TAN_sp_cost_increase }
+			custom_effect_tooltip = TAN_sp_campaign_cooldown_tt
 		}
+
+		ai_will_do = { factor = 1 }
 	}
-##Every bond in the hands of the workers is an extra shell against the enemy!
-	TAN_propaganda_transport = { # ID = 8
-		priority = 7
 
+	TAN_sp_defend_the_revolution = {
+		priority = 3
 		icon = eng_propaganda_campaigns
-
-		ai_will_do = {
-			base = 0.7
-			modifier = {
-				factor = 0.1
-				check_variable = { TAN_propaganda_transport_cost > 30 } #Less likely to do it a third time
-			}
-			modifier = {
-				factor = 0.1
-				check_variable = { TAN_propaganda_transport_cost > 45 } #Even less likely to do it a fourth time
-			}
-			modifier = {
-				factor = 0
-				check_variable = { TAN_propaganda_transport_cost > 90 } #Shouldn't even considered doing it a fifth time
-			}
-		}
-
-		allowed = {
-			original_tag = TAN
-		}
-
-		available = {
-			TAN_propaganda_poster_slot_available = yes
-			#### has_completed_focus = TAN_Send_Military_Aid
-		}
-
-		visible = {
-		}
-
 		days_remove = 70
-
 		days_re_enable = 45
+		cost = TAN_sp_defend_the_revolution_cost
 
-		cost = 25
+		allowed = { original_tag = TAN }
+		visible = { has_country_flag = TAN_state_propaganda_unlocked }
+		available = { TAN_sp_poster_slot_available = yes }
 
 		modifier = {
-			consumer_goods_factor = -0.1
-			license_production_speed = 0.25
-			production_factory_efficiency_gain_factor = 0.1
-			production_factory_max_efficiency_factor = 0.1
+			army_attack_factor = 0.10
+			army_defence_factor = 0.10
+			army_org_factor = 0.05
 		}
 
 		complete_effect = {
-			set_variable = { TAN_new_propaganda_campaign = 8 }
-			TAN_pick_propaganda_campaign_slot_effect = yes
-			TAN_achievement_propaganda_counter_effect = yes
+			set_variable = { TAN_sp_new_campaign = 5 }
+			TAN_sp_pick_campaign_slot = yes
 		}
 
 		remove_effect = {
-			set_variable = { TAN_propaganda_campaign_to_remove = 8 }
-			TAN_reset_propaganda_campaign_slot_effect = yes
-
-			set_variable = { TAN_propaganda_cost = TAN_propaganda_transport_cost }
-			TAN_increase_propaganda_campaign_cost_effect = yes
-			set_variable = { TAN_propaganda_transport_cost = TAN_propaganda_cost }
-			clear_variable = TAN_propaganda_cost
-
-			custom_effect_tooltip = TAN_propaganda_campaign_cooldown_tt
+			set_variable = { TAN_sp_campaign_to_remove = 5 }
+			TAN_sp_reset_campaign_slot = yes
+			multiply_variable = { TAN_sp_defend_the_revolution_cost = TAN_sp_cost_increase }
+			custom_effect_tooltip = TAN_sp_campaign_cooldown_tt
 		}
+
+		ai_will_do = { factor = 1 }
 	}
 }

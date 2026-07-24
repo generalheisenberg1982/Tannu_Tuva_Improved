@@ -16,3 +16,18 @@ TAN_propaganda_campaigns = {
 		tag = TAN
 	}
 }
+
+TAN_state_propaganda_campaigns = {
+	priority = 100
+	icon = SOV_propaganda
+	scripted_gui = tan_state_propaganda_campaigns_ui
+
+	allowed = {
+		original_tag = TAN
+		is_government_in_exile = no
+	}
+
+	visible = {
+		has_country_flag = TAN_state_propaganda_unlocked
+	}
+}

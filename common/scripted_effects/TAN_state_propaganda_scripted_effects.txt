@@ -1,0 +1,62 @@
+TAN_sp_initialize_propaganda_system = {
+	hidden_effect = {
+		set_country_flag = TAN_state_propaganda_unlocked
+
+		if = {
+			limit = { NOT = { has_country_flag = TAN_state_propaganda_initialized } }
+
+			set_country_flag = TAN_state_propaganda_initialized
+
+			set_variable = { TAN_sp_locked_slot_index = 1 }
+			set_variable = { TAN_sp_empty_slot_index = 2 }
+
+			set_variable = { TAN_sp_poster_left_icon_frame = TAN_sp_empty_slot_index }
+			set_variable = { TAN_sp_poster_center_icon_frame = TAN_sp_empty_slot_index }
+			set_variable = { TAN_sp_poster_right_icon_frame = TAN_sp_empty_slot_index }
+
+			set_variable = { TAN_sp_cost_increase = 1.5 }
+			set_variable = { TAN_sp_raise_tuvan_workers_cost = 25 }
+			set_variable = { TAN_sp_every_yurt_a_workshop_cost = 25 }
+			set_variable = { TAN_sp_defend_the_revolution_cost = 25 }
+		}
+	}
+}
+
+TAN_sp_pick_campaign_slot = {
+	hidden_effect = {
+		if = {
+			limit = { check_variable = { TAN_sp_poster_left_icon_frame = TAN_sp_empty_slot_index } }
+			set_variable = { TAN_sp_poster_left_icon_frame = TAN_sp_new_campaign }
+		}
+		else_if = {
+			limit = { check_variable = { TAN_sp_poster_center_icon_frame = TAN_sp_empty_slot_index } }
+			set_variable = { TAN_sp_poster_center_icon_frame = TAN_sp_new_campaign }
+		}
+		else_if = {
+			limit = { check_variable = { TAN_sp_poster_right_icon_frame = TAN_sp_empty_slot_index } }
+			set_variable = { TAN_sp_poster_right_icon_frame = TAN_sp_new_campaign }
+		}
+
+		add_to_variable = { TAN_sp_campaigns_taken = 1 }
+		set_variable = { TAN_sp_new_campaign = 0 }
+	}
+}
+
+TAN_sp_reset_campaign_slot = {
+	hidden_effect = {
+		if = {
+			limit = { check_variable = { TAN_sp_poster_left_icon_frame = TAN_sp_campaign_to_remove } }
+			set_variable = { TAN_sp_poster_left_icon_frame = TAN_sp_empty_slot_index }
+		}
+		else_if = {
+			limit = { check_variable = { TAN_sp_poster_center_icon_frame = TAN_sp_campaign_to_remove } }
+			set_variable = { TAN_sp_poster_center_icon_frame = TAN_sp_empty_slot_index }
+		}
+		else_if = {
+			limit = { check_variable = { TAN_sp_poster_right_icon_frame = TAN_sp_campaign_to_remove } }
+			set_variable = { TAN_sp_poster_right_icon_frame = TAN_sp_empty_slot_index }
+		}
+
+		set_variable = { TAN_sp_campaign_to_remove = 0 }
+	}
+}
