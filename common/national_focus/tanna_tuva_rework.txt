@@ -47,10 +47,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				id = tanna_tuva.21
-			}
-			country_event = {
-				id = tanna_tuva.20
+				id = TAN_events.1
 			}
 		}
 	}
@@ -302,7 +299,7 @@ focus_tree = {
 		icon = GFX_focus_hol_the_foundations_of_defense
 		prerequisite = { focus = TAN_Closer_to_Moscow }
 		x = 15
-		y = 9
+		y = 7
 		cost = 10
 		
 		available_if_capitulated = no
@@ -609,7 +606,7 @@ focus_tree = {
 		id = TAN_Industrilize_Kyzyl
 		icon = GFX_SOV_develop_the_urals_ccp_2d_sov_compatibility
 		prerequisite = { focus = TAN_The_Chairmans_Speech }
-		x = 32
+		x = 33
 		y = 1
 		cost = 10
 		
@@ -629,7 +626,7 @@ focus_tree = {
 		id = TAN_Kyzyl_Factories_Program
 		icon = GFX_SOV_develop_the_urals_ccp_2d_sov_compatibility
 		prerequisite = { focus = TAN_Industrilize_Kyzyl }
-		x = 30
+		x = 32
 		y = 2
 		cost = 10
 		
@@ -650,7 +647,7 @@ focus_tree = {
 		icon = GFX_SOV_develop_the_urals_ccp_2d_sov_compatibility
 		prerequisite = { focus = TAN_Industrilize_Kyzyl }
 		x = 30
-		y = 3
+		y = 2
 		cost = 10
 		
 		available_if_capitulated = no
@@ -702,10 +699,11 @@ focus_tree = {
 
 		}
 		available = {
-
+			has_government = communism
 		}
 		completion_reward = {
 			add_political_power = 50
+			add_stability = -0.05
 		}
 	}
 	focus = {
@@ -775,7 +773,7 @@ focus_tree = {
 
 		}
 	}
-
+	# https://www.tuvaonline.ru/2014/11/24/repressirovannyy-premer-sat-churmit-tazhy-1894-1938.html
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 		id = TAN_Postage_Stamps
@@ -840,7 +838,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			set_global_flag = TAN_Going_After_ATK
 		}
 	}
 	focus = {
@@ -862,7 +860,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			set_global_flag = TAN_Going_After_KSP
 		}
 	}
 	focus = {
