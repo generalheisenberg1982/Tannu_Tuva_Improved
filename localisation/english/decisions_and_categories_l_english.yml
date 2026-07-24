@@ -80,3 +80,9 @@
  Priortize_Stealing_Light_Tanks:0 "Steal Light Tanks"
 
  Radio_Tuva:0 "Radio Tuva"
+ TAN_Tokas_Purge:0 "Toka's Consolidation of Power"
+ TAN_Tokas_Purge_desc:0 "Toka must secure the Little Khural and convince the public that the opposition is a danger to the state."
+ TAN_little_kurul_support_label:0 "Little Khural Support"
+ TAN_public_support_label:0 "Public Support"
+ TAN_little_kurul_support_meter_tt:0 "Little Khural Support: [?TAN.Kurul_Support|0]% of the Little Khural currently sides with Toka."
+ TAN_public_support_meter_tt:0 "Public Support: [?TAN.Public_Support|0]% of the public currently supports Toka's campaign."

@@ -1,6 +1,6 @@
 TAN_Tokas_Purge = {
 	icon = GFX_decision_category_generic_communism
-	picture = GFX_decision_cat_picture_NOR_preparedness
+	scripted_gui = TAN_Toka_Consolidating_Power_GUI
 	priority = 9
 	
 	allowed = {

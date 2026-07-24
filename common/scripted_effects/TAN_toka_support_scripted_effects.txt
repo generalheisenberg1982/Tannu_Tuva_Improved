@@ -1,0 +1,196 @@
+TAN_initialize_toka_support_gui = {
+	hidden_effect = {
+		set_variable = {
+			var = TAN.Kurul_Support
+			value = 0
+		}
+		set_variable = {
+			var = TAN.Public_Support
+			value = 0
+		}
+		TAN_refresh_toka_support_gui = yes
+	}
+}
+
+TAN_refresh_toka_support_gui = {
+	hidden_effect = {
+		TAN_update_little_kurul_support_frame = yes
+		TAN_update_public_support_frame = yes
+	}
+}
+
+TAN_update_little_kurul_support_frame = {
+	hidden_effect = {
+		if = {
+			limit = { check_variable = { TAN.Kurul_Support < 5 } }
+			set_variable = { TAN_little_kurul_support_frame = 2 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 10 } }
+			set_variable = { TAN_little_kurul_support_frame = 3 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 15 } }
+			set_variable = { TAN_little_kurul_support_frame = 4 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 20 } }
+			set_variable = { TAN_little_kurul_support_frame = 5 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 25 } }
+			set_variable = { TAN_little_kurul_support_frame = 6 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 30 } }
+			set_variable = { TAN_little_kurul_support_frame = 7 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 35 } }
+			set_variable = { TAN_little_kurul_support_frame = 8 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 40 } }
+			set_variable = { TAN_little_kurul_support_frame = 9 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 45 } }
+			set_variable = { TAN_little_kurul_support_frame = 10 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 50 } }
+			set_variable = { TAN_little_kurul_support_frame = 11 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 55 } }
+			set_variable = { TAN_little_kurul_support_frame = 12 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 60 } }
+			set_variable = { TAN_little_kurul_support_frame = 13 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 65 } }
+			set_variable = { TAN_little_kurul_support_frame = 14 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 70 } }
+			set_variable = { TAN_little_kurul_support_frame = 15 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 75 } }
+			set_variable = { TAN_little_kurul_support_frame = 16 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 80 } }
+			set_variable = { TAN_little_kurul_support_frame = 17 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 85 } }
+			set_variable = { TAN_little_kurul_support_frame = 18 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 90 } }
+			set_variable = { TAN_little_kurul_support_frame = 19 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 95 } }
+			set_variable = { TAN_little_kurul_support_frame = 20 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Kurul_Support < 100 } }
+			set_variable = { TAN_little_kurul_support_frame = 21 }
+		}
+		else = {
+			set_variable = { TAN_little_kurul_support_frame = 22 }
+		}
+	}
+}
+
+TAN_update_public_support_frame = {
+	hidden_effect = {
+		if = {
+			limit = { check_variable = { TAN.Public_Support < 5 } }
+			set_variable = { TAN_public_support_frame = 2 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 10 } }
+			set_variable = { TAN_public_support_frame = 3 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 15 } }
+			set_variable = { TAN_public_support_frame = 4 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 20 } }
+			set_variable = { TAN_public_support_frame = 5 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 25 } }
+			set_variable = { TAN_public_support_frame = 6 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 30 } }
+			set_variable = { TAN_public_support_frame = 7 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 35 } }
+			set_variable = { TAN_public_support_frame = 8 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 40 } }
+			set_variable = { TAN_public_support_frame = 9 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 45 } }
+			set_variable = { TAN_public_support_frame = 10 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 50 } }
+			set_variable = { TAN_public_support_frame = 11 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 55 } }
+			set_variable = { TAN_public_support_frame = 12 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 60 } }
+			set_variable = { TAN_public_support_frame = 13 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 65 } }
+			set_variable = { TAN_public_support_frame = 14 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 70 } }
+			set_variable = { TAN_public_support_frame = 15 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 75 } }
+			set_variable = { TAN_public_support_frame = 16 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 80 } }
+			set_variable = { TAN_public_support_frame = 17 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 85 } }
+			set_variable = { TAN_public_support_frame = 18 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 90 } }
+			set_variable = { TAN_public_support_frame = 19 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 95 } }
+			set_variable = { TAN_public_support_frame = 20 }
+		}
+		else_if = {
+			limit = { check_variable = { TAN.Public_Support < 100 } }
+			set_variable = { TAN_public_support_frame = 21 }
+		}
+		else = {
+			set_variable = { TAN_public_support_frame = 22 }
+		}
+	}
+}

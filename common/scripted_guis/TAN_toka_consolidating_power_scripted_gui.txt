@@ -1,0 +1,18 @@
+scripted_gui = {
+
+	TAN_Toka_Consolidating_Power_GUI = {
+		context_type = decision_category
+		window_name = "TAN_Toka_Consolidating_Power_GUI_window"
+
+		properties = {
+			TAN_little_kurul_support_meter = {
+				frame = TAN_little_kurul_support_frame
+			}
+
+			TAN_public_support_meter = {
+				frame = TAN_public_support_frame
+			}
+		}
+	}
+
+}

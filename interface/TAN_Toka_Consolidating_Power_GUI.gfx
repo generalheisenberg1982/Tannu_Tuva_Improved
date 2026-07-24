@@ -1,0 +1,17 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_TAN_Little_Kurul_Support"
+		texturefile = "gfx/interface/Little_Kurul_Support/TAN_Little_Kurul_Support.dds"
+		legacy_lazy_load = no
+		noOfFrames = 22
+	}
+
+	spriteType = {
+		name = "GFX_TAN_Public_Support"
+		texturefile = "gfx/interface/Public_Support/TAN_Public_Support.dds"
+		legacy_lazy_load = no
+		noOfFrames = 22
+	}
+
+}

@@ -36,6 +36,7 @@ TAN_Tokas_Purge = {
 				value = 5
 				tooltip = add_5_to_Kurul_Support
 			}
+			TAN_refresh_toka_support_gui = yes
         }
 		ai_will_do = {
 			factor = 90			
@@ -73,6 +74,7 @@ TAN_Tokas_Purge = {
 				value = 15
 				tooltip = add_15_to_Kurul_Support
 			}
+			TAN_refresh_toka_support_gui = yes
         }
 		ai_will_do = {
 			factor = 90			
@@ -112,6 +114,7 @@ TAN_Tokas_Purge = {
 				value = 5
 				tooltip = add_5_to_Public_Support
 			}
+			TAN_refresh_toka_support_gui = yes
         }
 		ai_will_do = {
 			factor = 90			
@@ -154,6 +157,7 @@ TAN_Tokas_Purge = {
 				value = -10
 				tooltip = add_negative_10_to_Public_Support
 			}
+			TAN_refresh_toka_support_gui = yes
         }
 		ai_will_do = {
 			factor = 90			
@@ -196,6 +200,7 @@ TAN_Tokas_Purge = {
 				value = -10
 				tooltip = add_negative_10_to_Public_Support
 			}
+			TAN_refresh_toka_support_gui = yes
         }
 		ai_will_do = {
 			factor = 90			
@@ -234,6 +239,7 @@ TAN_Tokas_Purge = {
 				value = -5
 				tooltip = add_negative_5_to_Kurul_Support
 			}
+			TAN_refresh_toka_support_gui = yes
 		}
         remove_effect = {
 			add_to_variable = {
@@ -247,6 +253,7 @@ TAN_Tokas_Purge = {
 				tooltip = add_negative_10_to_Public_Support
 			}
 			set_global_flag = TAN_Warrant_ATK
+			TAN_refresh_toka_support_gui = yes
         }
 		ai_will_do = {
 			factor = 90			
@@ -286,6 +293,7 @@ TAN_Tokas_Purge = {
 				value = -5
 				tooltip = add_negative_5_to_Kurul_Support
 			}
+			TAN_refresh_toka_support_gui = yes
 		}
         remove_effect = {
 			add_to_variable = {
@@ -299,6 +307,7 @@ TAN_Tokas_Purge = {
 				tooltip = add_negative_10_to_Public_Support
 			}
 			set_global_flag = TAN_ATK_Arrested
+			TAN_refresh_toka_support_gui = yes
         }
 		ai_will_do = {
 			factor = 90			
@@ -337,6 +346,7 @@ TAN_Tokas_Purge = {
 				value = -5
 				tooltip = add_negative_5_to_Kurul_Support
 			}
+			TAN_refresh_toka_support_gui = yes
 		}
         remove_effect = {
 			add_to_variable = {
@@ -350,6 +360,7 @@ TAN_Tokas_Purge = {
 				tooltip = add_negative_10_to_Public_Support
 			}
 			set_global_flag = TAN_Warrant_KSP
+			TAN_refresh_toka_support_gui = yes
         }
 		ai_will_do = {
 			factor = 90			
@@ -389,6 +400,7 @@ TAN_Tokas_Purge = {
 				value = -5
 				tooltip = add_negative_5_to_Kurul_Support
 			}
+			TAN_refresh_toka_support_gui = yes
 		}
         remove_effect = {
 			add_to_variable = {
@@ -402,6 +414,7 @@ TAN_Tokas_Purge = {
 				tooltip = add_negative_10_to_Public_Support
 			}
 			set_global_flag = TAN_KSP_Arrested
+			TAN_refresh_toka_support_gui = yes
         }
 		ai_will_do = {
 			factor = 90			
@@ -440,6 +453,7 @@ TAN_Tokas_Purge = {
 				value = -10
 				tooltip = add_negative_10_to_Kurul_Support
 			}
+			TAN_refresh_toka_support_gui = yes
 		}
         remove_effect = {
 			add_to_variable = {
@@ -453,6 +467,7 @@ TAN_Tokas_Purge = {
 				tooltip = add_negative_10_to_Public_Support
 			}
 			set_global_flag = TAN_Warrant_CD
+			TAN_refresh_toka_support_gui = yes
         }
 		ai_will_do = {
 			factor = 90			
@@ -492,6 +507,7 @@ TAN_Tokas_Purge = {
 				value = -5
 				tooltip = add_negative_5_to_Kurul_Support
 			}
+			TAN_refresh_toka_support_gui = yes
 		}
         remove_effect = {
 			add_to_variable = {
@@ -505,6 +521,7 @@ TAN_Tokas_Purge = {
 				tooltip = add_negative_10_to_Public_Support
 			}
 			set_global_flag = TAN_CD_Arrested
+			TAN_refresh_toka_support_gui = yes
         }
 		ai_will_do = {
 			factor = 90			
