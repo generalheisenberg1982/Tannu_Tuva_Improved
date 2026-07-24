@@ -19,7 +19,7 @@ guiTypes = {
 		#BACKGROUND
 		iconType = {
 			name ="propaganda_bg"
-			spriteType = "GFX_propaganda_bg"
+			spriteType = "TAN_GFX_sp_propaganda_bg"
 			position = { x=@BACKGROUND_X y=@BACKGROUND_Y }
 		}
 

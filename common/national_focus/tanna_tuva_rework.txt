@@ -770,7 +770,9 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			set_global_flag = TAN_state_propaganda_unlocked
+			unlock_decision_category_tooltip = TAN_state_propaganda_campaigns
+			TAN_sp_initialize_propaganda_system = yes
 		}
 	}
 	# https://www.tuvaonline.ru/2014/11/24/repressirovannyy-premer-sat-churmit-tazhy-1894-1938.html

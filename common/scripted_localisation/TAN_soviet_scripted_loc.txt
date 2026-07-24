@@ -8,6 +8,12 @@
 # localization_key -> points to the localization key
 # that'll be used if trigger passes
 
+defined_text = {
+	name = TANGetStatePropagandaSprite
+	text = {
+		localization_key = GFX_TAN_sp_propaganda_strip
+	}
+}
 
 defined_text = {
 	name = TANGetPropagandaCampaignEffects_Left
