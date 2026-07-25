@@ -64,6 +64,52 @@ TAN_Tokas_Purge = {
 		fire_only_once = yes		
 		cost = 25
         days_remove = 10
+		days_re_enable = 20
+        custom_cost_text = decision_cost_ie_1000
+		complete_effect = {	
+
+		}
+        remove_effect = {
+			add_to_variable = {
+				var = TAN.Kurul_Support
+				value = 10
+				tooltip = add_10_to_Kurul_Support
+			}
+			add_to_variable = {
+				var = TAN.Public_Support
+				value = 10
+				tooltip = add_negative_10_to_Public_Support
+			}
+			TAN_refresh_toka_support_gui = yes
+        }
+		ai_will_do = {
+			factor = 90			
+		}		
+	}
+
+	#Raising the Kutvans 
+	TAN_Increase_Kutvan_Infleunce = {
+
+		icon = GFX_decision_ger_military_buildup
+		available = {
+            has_political_power > 26
+		}
+		visible = {
+            has_completed_focus = TAN_Control_the_Kurul
+			has_country_leader = {
+				character = TAN_salchak_toka
+				ruling_only = yes
+			}
+			NOT = {
+				has_completed_focus = TAN_The_Case_of_Nine
+			}
+			ROOT = {
+				tag = TAN
+			}
+		}
+		fire_only_once = no		
+		cost = 25
+        days_remove = 10
         custom_cost_text = decision_cost_ie_1000
 		complete_effect = {	
 
@@ -127,13 +173,10 @@ TAN_Tokas_Purge = {
             has_political_power > 16
 		}
 		visible = {
-            has_completed_focus = TAN_Supress_the_Montestaries
+            has_completed_focus = TAN_Supress_the_Monestaries
 			has_country_leader = {
 				character = TAN_salchak_toka
 				ruling_only = yes
-			}
-			NOT = {
-				has_completed_focus = TAN_The_Case_of_Nine
 			}
 			ROOT = {
 				tag = TAN
@@ -170,7 +213,7 @@ TAN_Tokas_Purge = {
             has_political_power > 46
 		}
 		visible = {
-            has_completed_focus = TAN_Supress_the_Montestaries
+            has_completed_focus = TAN_Supress_the_Monestaries
 			has_country_leader = {
 				character = TAN_salchak_toka
 				ruling_only = yes
@@ -232,6 +275,7 @@ TAN_Tokas_Purge = {
 		}
 		fire_only_once = yes		
 		cost = 15
+		days_remove = 10
         custom_cost_text = decision_cost_ie_1000
 		complete_effect = {	
 			add_to_variable = {
@@ -286,6 +330,7 @@ TAN_Tokas_Purge = {
 		}
 		fire_only_once = yes		
 		cost = 15
+		days_remove = 10
         custom_cost_text = decision_cost_ie_1000
 		complete_effect = {	
 			add_to_variable = {
@@ -339,6 +384,7 @@ TAN_Tokas_Purge = {
 		}
 		fire_only_once = yes		
 		cost = 15
+		days_remove = 10
         custom_cost_text = decision_cost_ie_1000
 		complete_effect = {	
 			add_to_variable = {
@@ -393,6 +439,7 @@ TAN_Tokas_Purge = {
 		}
 		fire_only_once = yes		
 		cost = 15
+		days_remove = 10
         custom_cost_text = decision_cost_ie_1000
 		complete_effect = {	
 			add_to_variable = {
@@ -446,6 +493,7 @@ TAN_Tokas_Purge = {
 		}
 		fire_only_once = yes		
 		cost = 15
+		days_remove = 10
         custom_cost_text = decision_cost_ie_1000
 		complete_effect = {	
 			add_to_variable = {
@@ -500,6 +548,7 @@ TAN_Tokas_Purge = {
 		}
 		fire_only_once = yes		
 		cost = 15
+		days_remove = 10
         custom_cost_text = decision_cost_ie_1000
 		complete_effect = {	
 			add_to_variable = {
@@ -527,4 +576,463 @@ TAN_Tokas_Purge = {
 			factor = 90			
 		}		
 	}
+
+	# Issue a warrant for OT
+	TAN_Fabricate_Charges_Against_Oiun_Tanchai = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_political_power > 16
+			has_global_flag = TAN_Going_After_OT
+			NOT = { has_global_flag = TAN_OT_Dead }
+		}
+		visible = {
+			has_completed_focus = TAN_Removal_the_Opposition
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+			NOT = { has_completed_focus = TAN_The_Case_of_Nine }
+			ROOT = { tag = TAN }
+		}
+		fire_only_once = yes
+		cost = 15
+		days_remove = 10
+		custom_cost_text = decision_cost_ie_1000
+		complete_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = -5 tooltip = add_negative_5_to_Kurul_Support }
+			TAN_refresh_toka_support_gui = yes
+		}
+		remove_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = 10 tooltip = add_5_to_Kurul_Support }
+			add_to_variable = { var = TAN.Public_Support value = -10 tooltip = add_negative_10_to_Public_Support }
+			set_global_flag = TAN_Warrant_OT
+			TAN_refresh_toka_support_gui = yes
+		}
+		ai_will_do = { factor = 90 }
+	}
+
+	# Arrest OT
+	TAN_Arrest_Oiun_Tanchai = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_political_power > 26
+			has_global_flag = TAN_Going_After_OT
+			has_global_flag = TAN_Warrant_OT
+			NOT = { has_global_flag = TAN_OT_Dead }
+		}
+		visible = {
+			has_completed_focus = TAN_Removal_the_Opposition
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+			NOT = { has_completed_focus = TAN_The_Case_of_Nine }
+			ROOT = { tag = TAN }
+		}
+		fire_only_once = yes
+		cost = 15
+		days_remove = 10
+		custom_cost_text = decision_cost_ie_1000
+		complete_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = -5 tooltip = add_negative_5_to_Kurul_Support }
+			TAN_refresh_toka_support_gui = yes
+		}
+		remove_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = 10 tooltip = add_5_to_Kurul_Support }
+			add_to_variable = { var = TAN.Public_Support value = -10 tooltip = add_negative_10_to_Public_Support }
+			set_global_flag = TAN_OT_Arrested
+			TAN_refresh_toka_support_gui = yes
+		}
+		ai_will_do = { factor = 90 }
+	}
+
+	# Issue a warrant for KS
+	TAN_Fabricate_Charges_Against_Kuzhuget_Seren = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_political_power > 16
+			has_global_flag = TAN_Going_After_KS
+			NOT = { has_global_flag = TAN_KS_Dead }
+		}
+		visible = {
+			has_completed_focus = TAN_Removal_the_Opposition
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+			NOT = { has_completed_focus = TAN_The_Case_of_Nine }
+			ROOT = { tag = TAN }
+		}
+		fire_only_once = yes
+		cost = 15
+		days_remove = 10
+		custom_cost_text = decision_cost_ie_1000
+		complete_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = -5 tooltip = add_negative_5_to_Kurul_Support }
+			TAN_refresh_toka_support_gui = yes
+		}
+		remove_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = 10 tooltip = add_5_to_Kurul_Support }
+			add_to_variable = { var = TAN.Public_Support value = -10 tooltip = add_negative_10_to_Public_Support }
+			set_global_flag = TAN_Warrant_KS
+			TAN_refresh_toka_support_gui = yes
+		}
+		ai_will_do = { factor = 90 }
+	}
+
+	# Arrest KS
+	TAN_Arrest_Kuzhuget_Seren = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_political_power > 26
+			has_global_flag = TAN_Going_After_KS
+			has_global_flag = TAN_Warrant_KS
+			NOT = { has_global_flag = TAN_KS_Dead }
+		}
+		visible = {
+			has_completed_focus = TAN_Removal_the_Opposition
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+			NOT = { has_completed_focus = TAN_The_Case_of_Nine }
+			ROOT = { tag = TAN }
+		}
+		fire_only_once = yes
+		cost = 15
+		days_remove = 10
+		custom_cost_text = decision_cost_ie_1000
+		complete_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = -5 tooltip = add_negative_5_to_Kurul_Support }
+			TAN_refresh_toka_support_gui = yes
+		}
+		remove_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = 10 tooltip = add_5_to_Kurul_Support }
+			add_to_variable = { var = TAN.Public_Support value = -10 tooltip = add_negative_10_to_Public_Support }
+			set_global_flag = TAN_KS_Arrested
+			TAN_refresh_toka_support_gui = yes
+		}
+		ai_will_do = { factor = 90 }
+	}
+
+	# Issue a warrant for SL
+	TAN_Fabricate_Charges_Against_Sat_Lopsan = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_political_power > 16
+			has_global_flag = TAN_Going_After_SL
+			NOT = { has_global_flag = TAN_SL_Dead }
+		}
+		visible = {
+			has_completed_focus = TAN_Removal_the_Opposition
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+			NOT = { has_completed_focus = TAN_The_Case_of_Nine }
+			ROOT = { tag = TAN }
+		}
+		fire_only_once = yes
+		cost = 15
+		days_remove = 10
+		custom_cost_text = decision_cost_ie_1000
+		complete_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = -5 tooltip = add_negative_5_to_Kurul_Support }
+			TAN_refresh_toka_support_gui = yes
+		}
+		remove_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = 10 tooltip = add_5_to_Kurul_Support }
+			add_to_variable = { var = TAN.Public_Support value = -10 tooltip = add_negative_10_to_Public_Support }
+			set_global_flag = TAN_Warrant_SL
+			TAN_refresh_toka_support_gui = yes
+		}
+		ai_will_do = { factor = 90 }
+	}
+
+	# Arrest SL
+	TAN_Arrest_Sat_Lopsan = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_political_power > 26
+			has_global_flag = TAN_Going_After_SL
+			has_global_flag = TAN_Warrant_SL
+			NOT = { has_global_flag = TAN_SL_Dead }
+		}
+		visible = {
+			has_completed_focus = TAN_Removal_the_Opposition
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+			NOT = { has_completed_focus = TAN_The_Case_of_Nine }
+			ROOT = { tag = TAN }
+		}
+		fire_only_once = yes
+		cost = 15
+		days_remove = 10
+		custom_cost_text = decision_cost_ie_1000
+		complete_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = -5 tooltip = add_negative_5_to_Kurul_Support }
+			TAN_refresh_toka_support_gui = yes
+		}
+		remove_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = 10 tooltip = add_5_to_Kurul_Support }
+			add_to_variable = { var = TAN.Public_Support value = -10 tooltip = add_negative_10_to_Public_Support }
+			set_global_flag = TAN_SL_Arrested
+			TAN_refresh_toka_support_gui = yes
+		}
+		ai_will_do = { factor = 90 }
+	}
+
+	# Issue a warrant for HT
+	TAN_Fabricate_Charges_Against_Hovalyg_Totkan = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_political_power > 16
+			has_global_flag = TAN_Going_After_HT
+			NOT = { has_global_flag = TAN_HT_Dead }
+		}
+		visible = {
+			has_completed_focus = TAN_Removal_the_Opposition
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+			NOT = { has_completed_focus = TAN_The_Case_of_Nine }
+			ROOT = { tag = TAN }
+		}
+		fire_only_once = yes
+		cost = 15
+		days_remove = 10
+		custom_cost_text = decision_cost_ie_1000
+		complete_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = -5 tooltip = add_negative_5_to_Kurul_Support }
+			TAN_refresh_toka_support_gui = yes
+		}
+		remove_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = 10 tooltip = add_5_to_Kurul_Support }
+			add_to_variable = { var = TAN.Public_Support value = -10 tooltip = add_negative_10_to_Public_Support }
+			set_global_flag = TAN_Warrant_HT
+			TAN_refresh_toka_support_gui = yes
+		}
+		ai_will_do = { factor = 90 }
+	}
+
+	# Arrest HT
+	TAN_Arrest_Hovalyg_Totkan = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_political_power > 26
+			has_global_flag = TAN_Going_After_HT
+			has_global_flag = TAN_Warrant_HT
+			NOT = { has_global_flag = TAN_HT_Dead }
+		}
+		visible = {
+			has_completed_focus = TAN_Removal_the_Opposition
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+			NOT = { has_completed_focus = TAN_The_Case_of_Nine }
+			ROOT = { tag = TAN }
+		}
+		fire_only_once = yes
+		cost = 15
+		days_remove = 10
+		custom_cost_text = decision_cost_ie_1000
+		complete_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = -5 tooltip = add_negative_5_to_Kurul_Support }
+			TAN_refresh_toka_support_gui = yes
+		}
+		remove_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = 10 tooltip = add_5_to_Kurul_Support }
+			add_to_variable = { var = TAN.Public_Support value = -10 tooltip = add_negative_10_to_Public_Support }
+			set_global_flag = TAN_HT_Arrested
+			TAN_refresh_toka_support_gui = yes
+		}
+		ai_will_do = { factor = 90 }
+	}
+
+	# Issue a warrant for OS
+	TAN_Fabricate_Charges_Against_Oiun_Sengiijik = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_political_power > 16
+			has_global_flag = TAN_Going_After_OS
+			NOT = { has_global_flag = TAN_OS_Dead }
+		}
+		visible = {
+			has_completed_focus = TAN_Removal_the_Opposition
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+			NOT = { has_completed_focus = TAN_The_Case_of_Nine }
+			ROOT = { tag = TAN }
+		}
+		fire_only_once = yes
+		cost = 15
+		days_remove = 10
+		custom_cost_text = decision_cost_ie_1000
+		complete_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = -5 tooltip = add_negative_5_to_Kurul_Support }
+			TAN_refresh_toka_support_gui = yes
+		}
+		remove_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = 10 tooltip = add_5_to_Kurul_Support }
+			add_to_variable = { var = TAN.Public_Support value = -10 tooltip = add_negative_10_to_Public_Support }
+			set_global_flag = TAN_Warrant_OS
+			TAN_refresh_toka_support_gui = yes
+		}
+		ai_will_do = { factor = 90 }
+	}
+
+	# Arrest OS
+	TAN_Arrest_Oiun_Sengiijik = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_political_power > 26
+			has_global_flag = TAN_Going_After_OS
+			has_global_flag = TAN_Warrant_OS
+			NOT = { has_global_flag = TAN_OS_Dead }
+		}
+		visible = {
+			has_completed_focus = TAN_Removal_the_Opposition
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+			NOT = { has_completed_focus = TAN_The_Case_of_Nine }
+			ROOT = { tag = TAN }
+		}
+		fire_only_once = yes
+		cost = 15
+		days_remove = 10
+		custom_cost_text = decision_cost_ie_1000
+		complete_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = -5 tooltip = add_negative_5_to_Kurul_Support }
+			TAN_refresh_toka_support_gui = yes
+		}
+		remove_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = 10 tooltip = add_5_to_Kurul_Support }
+			add_to_variable = { var = TAN.Public_Support value = -10 tooltip = add_negative_10_to_Public_Support }
+			set_global_flag = TAN_OS_Arrested
+			TAN_refresh_toka_support_gui = yes
+		}
+		ai_will_do = { factor = 90 }
+	}
+
+	# Issue a warrant for KSO
+	TAN_Fabricate_Charges_Against_Kuular_Sungar_Ool = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_political_power > 16
+			has_global_flag = TAN_Going_After_KSO
+			NOT = { has_global_flag = TAN_KSO_Dead }
+		}
+		visible = {
+			has_completed_focus = TAN_Removal_the_Opposition
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+			NOT = { has_completed_focus = TAN_The_Case_of_Nine }
+			ROOT = { tag = TAN }
+		}
+		fire_only_once = yes
+		cost = 15
+		days_remove = 10
+		custom_cost_text = decision_cost_ie_1000
+		complete_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = -5 tooltip = add_negative_5_to_Kurul_Support }
+			TAN_refresh_toka_support_gui = yes
+		}
+		remove_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = 10 tooltip = add_5_to_Kurul_Support }
+			add_to_variable = { var = TAN.Public_Support value = -10 tooltip = add_negative_10_to_Public_Support }
+			set_global_flag = TAN_Warrant_KSO
+			TAN_refresh_toka_support_gui = yes
+		}
+		ai_will_do = { factor = 90 }
+	}
+
+	# Arrest KSO
+	TAN_Arrest_Kuular_Sungar_Ool = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_political_power > 26
+			has_global_flag = TAN_Going_After_KSO
+			has_global_flag = TAN_Warrant_KSO
+			NOT = { has_global_flag = TAN_KSO_Dead }
+		}
+		visible = {
+			has_completed_focus = TAN_Removal_the_Opposition
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+			NOT = { has_completed_focus = TAN_The_Case_of_Nine }
+			ROOT = { tag = TAN }
+		}
+		fire_only_once = yes
+		cost = 15
+		days_remove = 10
+		custom_cost_text = decision_cost_ie_1000
+		complete_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = -5 tooltip = add_negative_5_to_Kurul_Support }
+			TAN_refresh_toka_support_gui = yes
+		}
+		remove_effect = {
+			add_to_variable = { var = TAN.Kurul_Support value = 10 tooltip = add_5_to_Kurul_Support }
+			add_to_variable = { var = TAN.Public_Support value = -10 tooltip = add_negative_10_to_Public_Support }
+			set_global_flag = TAN_KSO_Arrested
+			TAN_refresh_toka_support_gui = yes
+		}
+		ai_will_do = { factor = 90 }
+	}
+}
+TAN_The_Second_Collectivization = {
+	TAN_Force_the_Formation_of_Kolkhazs = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_completed_focus = TAN_Collectivize_the_Herds
+			ROOT = { tag = TAN }
+		}
+		visible = {
+			has_completed_focus = TAN_Collectivation
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+		}
+		fire_only_once = no
+		cost = 15
+		days_remove = 10
+		custom_cost_text = decision_cost_ie_1000
+		complete_effect = {
+			add_stability = -0.025
+		}
+		remove_effect = {
+			subtract_from_variable = {
+				var = TAN_tuvan_economy_consumer_goods
+				value = 10
+				tooltip = sub_10_from_TAN_tuvan_economy_consumer_goods
+			}
+		}
+		ai_will_do = { factor = 90 }
+	}
+	TAN_Reduce_Private_Herds = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_completed_focus = TAN_Collectivize_the_Herds
+			ROOT = { tag = TAN }
+		}
+		visible = {
+			has_completed_focus = TAN_Collectivation
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+		}
+		fire_only_once = no
+		cost = 15
+		days_remove = 10
+		custom_cost_text = decision_cost_ie_1000
+		complete_effect = {
+			add_stability = -0.025
+		}
+		modifier = {
+			consumer_goods_factor = -0.10
+		}
+		remove_effect = {
+
+		}
+		ai_will_do = { factor = 90 }
+	}
+	TAN_Allow_More_Private_Herds = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_completed_focus = TAN_Collectivize_the_Herds
+			ROOT = { tag = TAN }
+		}
+		visible = {
+			has_completed_focus = TAN_Collectivation
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+		}
+		fire_only_once = no
+		cost = 15
+		days_remove = 10
+		custom_cost_text = decision_cost_ie_1000
+		complete_effect = {
+			add_stability = -0.03
+		}
+		modifier = {
+			consumer_goods_factor = 0.10
+		}
+		remove_effect = {
+			
+		}
+		ai_will_do = { factor = 90 }
+	}
+}
+TAN_Education_Reforms_decisions = {
+	
 }

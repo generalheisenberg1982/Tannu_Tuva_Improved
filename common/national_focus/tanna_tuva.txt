@@ -1454,7 +1454,7 @@ focus_tree = {
 				id = tanna_tuva.29
 			}
 			promote_character = {
-				character = TAN_Sat_Churmit_Dazhy
+				character = TAN_sat_churmit_dazhy
 				ideology = marxism
 			}
 		}

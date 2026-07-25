@@ -726,7 +726,21 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			add_to_variable = {
+				var = TAN.Public_Support
+				value = 10
+				tooltip = add_10_to_Public_Support
+			}
+			add_political_power = 75
+			set_variable = { TAN_internal_affairs_pp_gain = 0.25 }
+			set_variable = { TAN_internal_affairs_stability_factor = 0.05 }
+			set_variable = { TAN_internal_affairs_communism_drift = 0.025 }
+			set_variable = { TAN_internal_affairs_drift_defense_factor = 0.1 }
+			set_variable = { TAN_internal_affairs_communism_acceptance = 0.5 }
+			set_variable = { opinion_gain_monthly_same_ideology_factor = 0.1 }
+			add_dynamic_modifier = {
+				modifier = TAN_ministry_of_internal_affairs_dynamic_modifier
+			}
 		}
 	}
 	focus = {
@@ -748,7 +762,32 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			custom_effect_tooltip = TAN_I_P_Rogov_Advisors_Avalability
+			add_to_variable = {
+				var = TAN.Public_Support
+				value = 10
+				tooltip = add_10_to_Public_Support
+			}
+			add_to_variable = {
+				var = TAN.Kurul_Support
+				value = 10
+				tooltip = add_10_to_Kurul_Support
+			}			
+			add_to_variable = {
+				var = TAN_internal_affairs_stability_factor
+				value = 0.05
+				tooltip = add_100_to_var_tt
+			}
+			add_to_variable = {
+				var = TAN_internal_affairs_pp_gain
+				value = 0.05
+				tooltip = add_100_to_var_tt
+			}
+			add_to_variable = {
+				var = TAN_internal_affairs_drift_defense_factor
+				value = 0.40
+				tooltip = add_100_to_var_tt
+			}
 		}
 	}
 
@@ -773,6 +812,9 @@ focus_tree = {
 		completion_reward = {
 			set_global_flag = TAN_state_propaganda_unlocked
 			unlock_decision_category_tooltip = TAN_state_propaganda_campaigns
+			unlock_decision_tooltip = TAN_sp_raise_tuvan_workers
+			unlock_decision_tooltip = TAN_sp_every_yurt_a_workshop
+			unlock_decision_tooltip = TAN_sp_defend_the_revolution
 			TAN_sp_initialize_propaganda_system = yes
 		}
 	}
@@ -842,6 +884,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_global_flag = TAN_Going_After_ATK
+			unlock_decision_tooltip = TAN_Fabricate_Charges_Against_Adyg_Tiluliush_Kemchik_Ool
+			unlock_decision_tooltip = TAN_Arrest_Adyg_Tiluliush_Kemchik_Ool
 		}
 	}
 	focus = {
@@ -864,6 +908,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_global_flag = TAN_Going_After_KSP
+			unlock_decision_tooltip = TAN_Fabricate_Charges_Against_Kara_Sal_Pirinlei
+			unlock_decision_tooltip = TAN_Arrest_Kara_Sal_Pirinlei
 		}
 	}
 	focus = {
@@ -885,7 +931,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			
 		}
 	}
 	focus = {
@@ -907,7 +953,13 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			add_to_variable = {
+				var = TAN.Kurul_Support
+				value = 10
+				tooltip = add_10_to_Kurul_Support
+			}
+			unlock_decision_tooltip = TAN_Talk_to_the_Deputies
+			unlock_decision_tooltip = TAN_Convince_Polat
 		}
 	}
 	focus = {
@@ -929,7 +981,10 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = TAN_Restricting_Buddahist_Teachings
+				days = 100
+			}
 		}
 	}
 	focus = {
@@ -952,7 +1007,11 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			set_variable = { TAN_Soviet_Cirriculum_research_speed_factor = 0.10 }
+			set_variable = { TAN_Soviet_Cirriculum_communism_drift = 0.05 }
+			add_dynamic_modifier = {
+				modifier = TAN_Soviet_Cirriculum
+			}
 		}
 	}
 	focus = {
@@ -974,7 +1033,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			add_ideas = TAN_Revolutionary_Youth
 		}
 	}
 	focus = {
@@ -996,7 +1055,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			unlock_decision_category_tooltip = TAN_Education_Reforms_decisions
 		}
 	}
 	focus = {
@@ -1041,7 +1100,14 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			add_stability = -0.025
+			add_political_power = 50
+			add_to_variable = {
+				var = TAN.Kurul_Support
+				value = 10
+				tooltip = add_10_to_Kurul_Support
+			}
+			unlock_decision_tooltip = TAN_Denounce_the_Montestaries
 		}
 	}
 	focus = {
@@ -1063,7 +1129,24 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			set_global_flag = TAN_Going_After_OT
+			set_global_flag = TAN_Going_After_KS
+			set_global_flag = TAN_Going_After_SL
+			set_global_flag = TAN_Going_After_HT
+			set_global_flag = TAN_Going_After_OS
+			set_global_flag = TAN_Going_After_KSO
+			unlock_decision_tooltip = TAN_Fabricate_Charges_Against_Oiun_Tanchai
+			unlock_decision_tooltip = TAN_Arrest_Oiun_Tanchai
+			unlock_decision_tooltip = TAN_Fabricate_Charges_Against_Kuzhuget_Seren
+			unlock_decision_tooltip = TAN_Arrest_Kuzhuget_Seren
+			unlock_decision_tooltip = TAN_Fabricate_Charges_Against_Sat_Lopsan
+			unlock_decision_tooltip = TAN_Arrest_Sat_Lopsan
+			unlock_decision_tooltip = TAN_Fabricate_Charges_Against_Hovalyg_Totkan
+			unlock_decision_tooltip = TAN_Arrest_Hovalyg_Totkan
+			unlock_decision_tooltip = TAN_Fabricate_Charges_Against_Oiun_Sengiijik
+			unlock_decision_tooltip = TAN_Arrest_Oiun_Sengiijik
+			unlock_decision_tooltip = TAN_Fabricate_Charges_Against_Kuular_Sungar_Ool
+			unlock_decision_tooltip = TAN_Arrest_Kuular_Sungar_Ool
 		}
 	}
 	focus = {
@@ -1086,7 +1169,9 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			set_global_flag = TAN_Going_After_CD
+			unlock_decision_tooltip = TAN_Fabricate_Charges_Against_Churmit_Dazhy
+			unlock_decision_tooltip = TAN_Arrest_Churmit_Dazhy
 		}
 	}
 	focus = {
@@ -1105,10 +1190,62 @@ focus_tree = {
 
 		}
 		available = {
-
+			custom_trigger_tooltip = {
+				tooltip = TAN_has_arrested_all_nine_figures_tt
+				has_global_flag = TAN_OT_Arrested
+				has_global_flag = TAN_KS_Arrested
+				has_global_flag = TAN_SL_Arrested
+				has_global_flag = TAN_HT_Arrested
+				has_global_flag = TAN_OS_Arrested
+				has_global_flag = TAN_KSO_Arrested
+				has_global_flag = TAN_ATK_Arrested
+				has_global_flag = TAN_CD_Arrested
+				has_global_flag = TAN_KSP_Arrested
+			}
 		}
 		completion_reward = {
+			country_event = {
+				id = TAN_events.2
+			}
+			custom_effect_tooltip = TAN_Effects_of_Case_of_Nine
+			if = {
+				limit = {
+					check_variable = {
+						var = TAN.Kurul_Support
+						value < 50
+					}
+				}
+				set_temp_variable = { TAN_kurul_pp_effect = 50 }
+				subtract_from_temp_variable = { TAN_kurul_pp_effect = TAN.Kurul_Support }
+				multiply_temp_variable = { TAN_kurul_pp_effect = -2 }
+				add_political_power = TAN_kurul_pp_effect
+			}
+			else = {
+				set_temp_variable = { TAN_kurul_pp_effect = TAN.Kurul_Support }
+				subtract_from_temp_variable = { TAN_kurul_pp_effect = 50 }
+				multiply_temp_variable = { TAN_kurul_pp_effect = 2 }
+				add_political_power = TAN_kurul_pp_effect
+			}
 
+			# Stability from public support
+			if = {
+				limit = {
+					check_variable = {
+						var = TAN.Public_Support
+						value < 50
+					}
+				}
+				set_temp_variable = { TAN_public_pp_effect = 50 }
+				subtract_from_temp_variable = { TAN_public_pp_effect = TAN.Public_Support }
+				multiply_temp_variable = { TAN_public_pp_effect = -0.02 }
+				add_stability = TAN_public_pp_effect
+			}
+			else = {
+				set_temp_variable = { TAN_public_pp_effect = TAN.Public_Support }
+				subtract_from_temp_variable = { TAN_public_pp_effect = 50 }
+				multiply_temp_variable = { TAN_public_pp_effect = 0.02 }
+				add_stability = TAN_public_pp_effect
+			}
 		}
 	}
 	focus = {
@@ -1130,7 +1267,16 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			329 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = -0.05
+			unlock_decision_category_tooltip = TAN_The_Second_Collectivization
 		}
 	}
 

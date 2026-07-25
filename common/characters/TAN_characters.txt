@@ -1,0 +1,847 @@
+characters={
+	TAN_salchak_toka={
+		name="Salchak Toka"
+		portraits={
+			civilian={
+				large=GFX_portrait_Salchak_Toka
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	TAN_oiun_tanchai={
+		name="Oiun Tanchai"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_oiun_tanchai
+			allowed  = {
+					original_tag  = TAN
+				}
+				available = {
+					NOT = { has_global_flag = TAN_OT_Arrested }
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_kuzhuget_seren={
+		name="Kuzhuget Seren"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_kuzhuget_seren
+			allowed  = {
+					original_tag  = TAN
+				}
+				available = {
+					NOT = { has_global_flag = TAN_KS_Arrested }
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_sat_lopsan={
+		name="Sat Lopsan"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_sat_lopsan
+			allowed  = {
+					original_tag  = TAN
+				}
+				available = {
+					NOT = { has_global_flag = TAN_SL_Arrested }
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_hovalyg_totkan={
+		name="Hovalyg Totkan"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_hovalyg_totkan
+			allowed  = {
+					original_tag  = TAN
+				}
+				available = {
+					NOT = { has_global_flag = TAN_HT_Arrested }
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_oiun_sengiijik={
+		name="Oiun Sengiijik"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_oiun_sengiijik
+			allowed  = {
+					original_tag  = TAN
+				}
+				available = {
+					NOT = { has_global_flag = TAN_OS_Arrested }
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_kuular_sungar_ool={
+		name="Kuular Sungar-ool"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_kuular_sungar_ool
+			allowed  = {
+					original_tag  = TAN
+				}
+				available = {
+					NOT = { has_global_flag = TAN_KSO_Arrested }
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_adyg_tiuliush_khemchik_ool={
+		name="Adyg-Tiuliush Khemchik-ool"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_adyg_tiuliush_khemchik_ool
+			allowed  = {
+					original_tag  = TAN
+				}
+				available = {
+					NOT = { has_global_flag = TAN_ATK_Arrested }
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_sat_churmit_dazhy={
+		name="Sat Churmit-Dazhy"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_sat_churmit_dazhy
+			allowed  = {
+					original_tag  = TAN
+				}
+				available = {
+					NOT = { has_global_flag = TAN_CD_Arrested }
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_kara_sal_pirinlei={
+		name="Kara-Sal Pirinlei"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_kara_sal_pirinlei
+			allowed  = {
+					original_tag  = TAN
+				}
+				available = {
+					NOT = { has_global_flag = TAN_KSP_Arrested }
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_oiun_shagdyr_siuriun={
+		name="Oiun Shagdyr-Siuriun"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_oiun_shagdyr_siuriun
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_sedip_ool_tanov={
+		name="Sedip-ool Tanov"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_sedip_ool_tanov
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_tania_sat={
+		name="Tania Sat"
+		portraits={
+			civilian={
+				small="GFX_idea_asia_generic_female_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_tania_sat
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_khertek_anchimaa={
+		name="Khertek Anchimaa"
+		portraits={
+			civilian={
+				small="GFX_idea_asia_generic_female_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_khertek_anchimaa
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_aleksandr_chymba={
+		name="Aleksandr Chymba"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_aleksandr_chymba
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_nikolai_tovarishhtai={
+		name="Nikolai Tovarishhtai"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_nikolai_tovarishhtai
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_shemir_erektol={
+		name="Shemir Erektol"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_shemir_erektol
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_viktor_kok_ool={
+		name="Viktor Kok-ool"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_viktor_kok_ool
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_choodu_nachyn={
+		name="Choodu Nachyn"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_choodu_nachyn
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_oiun_karsyrga={
+		name="Oiun Karsyrga"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_oiun_karsyrga
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_mongush_sambuu={
+		name="Mongush Sambuu"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_mongush_sambuu
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_badyra_irgit={
+		name="Badyra Irgit"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_badyra_irgit
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_bazyr_sat_khovalyg={
+		name="Bazyr-Sat Khovalyg"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_bazyr_sat_khovalyg
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_oidup_soian={
+		name="Oidup Soian"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_oidup_soian
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_khavakchaap_ondar={
+		name="Khavakchaap Ondar"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_khavakchaap_ondar
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_stepan_saryg_ool={
+		name="Stepan Saryg-ool"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_stepan_saryg_ool
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_oiun_okhemchik_temchi={
+		name="Oiun Okhemchik Temchi"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_oiun_okhemchik_temchi
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_oiun_enzak_tandynovich={
+		name="Oiun Enzak Tandynovich"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_oiun_enzak_tandynovich
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_samba_liundup={
+		name="Samba-Liundup"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_samba_liundup
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_salchak_parchyn={
+		name="Salchak Parchyn"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_salchak_parchyn
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_oiun_chunchuk_ool={
+		name="Oiun Chunchuk-ool"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_oiun_chunchuk_ool
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+
+				}
+				ai_will_do  = {
+					
+				}
+		}
+	}
+
+	TAN_I_P_Rogov = {
+		name="I. P. Rogov"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+				large="GFX_Portrait_Asia_Generic_communism"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_I_P_Rogov
+			allowed  = {
+					original_tag  = TAN
+				}
+				traits  = {
+					 
+				}
+				do_effect  = {
+					
+				}
+				ai_will_do  = {
+					
+				}
+		}		
+	}
+}
