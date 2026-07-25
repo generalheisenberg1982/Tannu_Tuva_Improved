@@ -1032,7 +1032,308 @@ TAN_The_Second_Collectivization = {
 		}
 		ai_will_do = { factor = 90 }
 	}
+	TAN_Settle_Nomads_in_Khemchik = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_completed_focus = TAN_Settle_the_Nomads
+			ROOT = { tag = TAN }
+			NOT = { has_country_flag = TAN_sc_settled_nomads_three_times }
+		}
+		visible = {
+			has_completed_focus = TAN_Settle_the_Nomads
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+		}
+		fire_only_once = no
+		cost = 15
+		days_remove = 30
+		complete_effect = { }
+		modifier = {
+			consumer_goods_factor = 0.10
+		}
+		remove_effect = {
+			329 = { add_extra_state_shared_building_slots = 1 }
+			add_manpower = 350
+			# flags track 3 total uses
+		}
+	}
+	TAN_Set_Up_Medical_Tents = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_completed_focus = TAN_Sedentarization
+			has_completed_focus = TAN_Invite_Soviet_Advisors
+			ROOT = { tag = TAN }
+		}
+		visible = {
+			has_completed_focus = TAN_Sedentarization
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+		}
+		cost = 20
+		days_remove = 60
+		days_re_enable = 30
+		modifier = {
+			weekly_stability = 0.005
+			consumer_goods_factor = 0.05
+		}
+		complete_effect = { }
+		remove_effect = { }
+	}
+	TAN_Create_New_Towns = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_completed_focus = TAN_Sedentarization
+			ROOT = { tag = TAN }
+		}
+		visible = {
+			has_completed_focus = TAN_Sedentarization
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+		}
+		cost = 25
+		days_remove = 45
+		complete_effect = { }
+		remove_effect = { }
+	}
 }
 TAN_Education_Reforms_decisions = {
-	
+	TAN_Expand_Literacy_Progam = {
+		icon = GFX_decision_ger_military_buildup
+		available = {
+			has_completed_focus = TAN_Sedentarization
+			ROOT = { tag = TAN }
+			NOT = {
+				has_idea = TAN_Litaracy_Program
+			}
+		}
+		visible = {
+			has_completed_focus = TAN_Sedentarization
+			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
+		}
+		cost = 25
+		days_remove = 45
+		complete_effect = { }
+		modifier = {
+			conscription_factor = 0.10
+		}
+		remove_effect = { 
+			add_to_variable = {
+				var = TAN_tuvan_economy_research_speed_factor
+				value = 0.05
+				tooltip = add_5_to_TAN_tuvan_economy_research_speed_factor
+			}
+			subtract_from_variable = {
+				var = TAN_tuvan_economy_consumer_goods
+				value = -0.10
+				tooltip = subtract_10_from_TAN_tuvan_economy_consumer_goods
+			}
+		}
+	}	
+}
+TAN_Soviet_Advisor_Development = {
+
+	TAN_Kyzyl_Sawmill = {
+		icon = GFX_decision_generic_construct_civ_factory
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors 329 = { infrastructure > 0 } }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		fire_only_once = yes
+		cost = 25
+		days_remove = 45
+		remove_effect = {
+			329 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+
+	TAN_Kyzyl_Felt_Boot_and_Leather_Plant = {
+		icon = GFX_decision_generic_construct_military_factory
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors 329 = { infrastructure > 0 } }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		fire_only_once = yes
+		cost = 25
+		days_remove = 45
+		remove_effect = {
+			329 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	TAN_Kyzyl_Brickworks = {
+		icon = GFX_decision_generic_construct_civ_factory
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors 329 = { infrastructure > 0 } }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		fire_only_once = yes
+		cost = 25
+		days_remove = 45
+		remove_effect = {
+			329 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+
+	TAN_Kyzyl_Auto_Repair_Plant = {
+		icon = GFX_decision_generic_construct_military_factory
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors 329 = { infrastructure > 1 } }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		fire_only_once = yes
+		cost = 35
+		days_remove = 60
+		remove_effect = {
+			329 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_tech_bonus = { name = TAN_auto_repair_motorization_bonus bonus = 0.50 uses = 1 category = motorized_equipment }
+		}
+	}
+
+	TAN_Kyzyl_Mechanical_Mill = {
+		icon = GFX_decision_generic_construct_civ_factory
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors 329 = { infrastructure > 1 } }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		fire_only_once = yes
+		cost = 30
+		days_remove = 60
+		remove_effect = {
+			329 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	TAN_Kyzyl_Sewing_Combine = {
+		icon = GFX_decision_generic_construct_civ_factory
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors 329 = { infrastructure > 1 } }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		fire_only_once = yes
+		cost = 30
+		days_remove = 60
+		remove_effect = {
+			329 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	TAN_Kyzyl_Food_Combine = {
+		icon = GFX_decision_generic_construct_civ_factory
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors 329 = { infrastructure > 1 } }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		fire_only_once = yes
+		cost = 30
+		days_remove = 60
+		remove_effect = {
+			329 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_manpower = 500
+		}
+	}
+
+	TAN_Kyzyl_Power_Station = {
+		icon = GFX_decision_generic_construct_civ_factory
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors 329 = { infrastructure > 2 } }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		fire_only_once = yes
+		cost = 40
+		days_remove = 75
+		remove_effect = {
+			329 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+
+	TAN_Usinsky_Tract = {
+		icon = GFX_goal_generic_construct_infrastructure
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		fire_only_once = yes
+		cost = 35
+		days_remove = 60
+		remove_effect = {
+			329 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	TAN_Tuvtrans = {
+		icon = GFX_goal_generic_construct_infrastructure
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		fire_only_once = yes
+		cost = 40
+		days_remove = 75
+		remove_effect = {
+			329 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+			add_tech_bonus = { name = TAN_tuvtrans_motorization_bonus bonus = 0.50 uses = 1 category = motorized_equipment }
+		}
+	}
+
+	TAN_Kharal_Naryn_Bai_Syut_Emi_Gold_Workings = {
+		icon = GFX_decision_generic_prospect_for_resources
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors 329 = { infrastructure > 2 } }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		fire_only_once = yes
+		cost = 25
+		days_remove = 45
+		remove_effect = { add_ideas = TAN_Kharal_Naryn_Bai_Syut_Emi_Gold_Workings_idea }
+	}
+
+	TAN_Eerbek_Coal_Workings = {
+		icon = GFX_decision_generic_prospect_for_resources
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors 329 = { infrastructure > 2 } }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		fire_only_once = yes
+		cost = 25
+		days_remove = 45
+		remove_effect = { add_resource = { type = coal amount = 2 state = 329 } }
+	}
+
+	TAN_Dus_Dag_Salt_Workings = {
+		icon = GFX_decision_generic_prospect_for_resources
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors 329 = { infrastructure > 2 } }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors has_completed_focus = TAN_Das_Dug_Mountain_Dispute}
+		fire_only_once = yes
+		cost = 20
+		days_remove = 45
+		remove_effect = { 
+			add_stability = 0.02 
+			add_ideas = TAN_Dus_Dag_Salt_Mine
+		}
+	}
+
+	TAN_Aktovrak_Asbestos = {
+		icon = GFX_decision_generic_prospect_for_resources
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors 329 = { infrastructure > 3 } }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		fire_only_once = yes
+		cost = 30
+		days_remove = 60
+		remove_effect = { add_resource = { type = tungsten amount = 2 state = 329 } }
+	}
+
+	TAN_Moren_Mica = {
+		icon = GFX_decision_generic_prospect_for_resources
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors 329 = { infrastructure > 3 } }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		fire_only_once = yes
+		cost = 30
+		days_remove = 60
+		remove_effect = {
+			add_tech_bonus = { name = TAN_moren_mica_electronics_bonus bonus = 0.50 uses = 1 category = electronics 
+			add_resource = { type = aluminum amount = 2 state = 329 } }
+		}
+	}
+
+	TAN_Elegest_Copper = {
+		icon = GFX_decision_generic_prospect_for_resources
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors 329 = { infrastructure > 3 } }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		fire_only_once = yes
+		cost = 30
+		days_remove = 60
+		remove_effect = { add_resource = { type = aluminium amount = 2 state = 329 } }
+	}
+
+	TAN_Kaa_Khem_Iron = {
+		icon = GFX_decision_generic_prospect_for_resources
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors 329 = { infrastructure > 3 } }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors }
+		fire_only_once = yes
+		cost = 35
+		days_remove = 60
+		remove_effect = { add_resource = { type = steel amount = 5 state = 329 } }
+	}
 }

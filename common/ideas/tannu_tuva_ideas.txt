@@ -59,6 +59,81 @@ ideas = {
 				drift_defence_factor = 0.15
 			}			
 		}
+		TAN_Litaracy_Program = {
+			picture = SOV_soviet_hegemony
+			
+			allowed = {
+				has_country_leader = TAN_salchak_toka
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+				consumer_goods_factor = 0.05
+			}			
+		}
+		TAN_Radio_Tuva = {
+			picture = SOV_soviet_hegemony
+			
+			allowed = {
+				has_country_leader = TAN_salchak_toka
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				land_reinforce_rate = 0.05
+				war_support_factor = 0.10
+				political_power_gain = 0.10
+				communism_drift = 0.01
+			}			
+		}
+		TAN_Kharal_Naryn_Bai_Syut_Emi_Gold_Workings_idea = {
+			picture = SOV_soviet_hegemony
+			
+			allowed = {
+				has_country_leader = TAN_salchak_toka
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+			}				
+		}
+		TAN_Dus_Dag_Salt_Mine = {
+			picture = SOV_soviet_hegemony
+			
+			allowed = {
+				has_country_leader = TAN_salchak_toka
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+			}			
+		}
 	}
 	hidden_ideas = {
 		hiddden_found_old_believers = {

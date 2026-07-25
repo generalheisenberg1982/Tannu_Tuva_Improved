@@ -9,7 +9,7 @@ TAN_sp_initialize_propaganda_system = {
 
 			set_variable = { TAN_sp_locked_slot_index = 1 }
 			set_variable = { TAN_sp_empty_slot_index = 2 }
-
+			
 			set_variable = { TAN_sp_poster_left_icon_frame = TAN_sp_empty_slot_index }
 			set_variable = { TAN_sp_poster_center_icon_frame = TAN_sp_empty_slot_index }
 			set_variable = { TAN_sp_poster_right_icon_frame = TAN_sp_empty_slot_index }
@@ -18,6 +18,7 @@ TAN_sp_initialize_propaganda_system = {
 			set_variable = { TAN_sp_raise_tuvan_workers_cost = 25 }
 			set_variable = { TAN_sp_every_yurt_a_workshop_cost = 25 }
 			set_variable = { TAN_sp_defend_the_revolution_cost = 25 }
+			set_variable = { TAN_sp_promote_sedentarization_cost = 25 }
 		}
 	}
 }

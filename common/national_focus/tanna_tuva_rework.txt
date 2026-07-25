@@ -188,7 +188,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			unlock_decision_category_tooltip = TAN_Soviet_Advisor_Development
 		}
 	}
 	focus = {
@@ -208,7 +208,9 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			country_event = {
+				id = TAN_events.3
+			}
 		}
 	}
 	focus = {
@@ -225,10 +227,16 @@ focus_tree = {
 
 		}
 		available = {
-
+			num_of_civilian_factories > 2
 		}
 		completion_reward = {
-
+			add_research_slot = 1
+			if = {
+				limit = {
+					num_of_civilian_factories > 10
+				}
+				add_research_slot = 1
+			}
 		}
 	}
 	focus = {
@@ -248,7 +256,12 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			add_tech_bonus = {
+				name = TAN_radio_research_bonus
+				bonus = 0.50
+				uses = 2
+				category = radio
+			}
 		}
 	}
 	focus = {
@@ -268,7 +281,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			add_idea = TAN_Radio_Tuva
 		}
 	}
 
@@ -1055,6 +1068,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
+			add_ideas = TAN_Litaracy_Program
 			unlock_decision_category_tooltip = TAN_Education_Reforms_decisions
 		}
 	}

@@ -95,4 +95,35 @@ TAN_state_propaganda_campaigns = {
 
 		ai_will_do = { factor = 1 }
 	}
+
+	TAN_sp_promote_sedentarization = {
+		priority = 4
+		icon = eng_propaganda_campaigns
+		days_remove = 70
+		days_re_enable = 45
+		cost = TAN_sp_promote_sedentarization_cost
+
+		allowed = { original_tag = TAN }
+		visible = {
+			has_country_flag = TAN_state_propaganda_unlocked
+			has_completed_focus = TAN_Settle_the_Nomads
+		}
+		available = { TAN_sp_poster_slot_available = yes }
+
+		modifier = {
+			stability_factor = 0.03
+			consumer_goods_factor = -0.02
+		}
+
+		complete_effect = {
+			set_variable = { TAN_sp_new_campaign = 6 }
+			TAN_sp_pick_campaign_slot = yes
+		}
+
+		remove_effect = {
+			set_variable = { TAN_sp_campaign_to_remove = 6 }
+			TAN_sp_reset_campaign_slot = yes
+			multiply_variable = { TAN_sp_promote_sedentarization_cost = TAN_sp_cost_increase }
+		}
+	}
 }

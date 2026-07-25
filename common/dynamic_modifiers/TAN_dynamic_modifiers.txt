@@ -12,6 +12,8 @@ TAN_Tuvan_Economy = {
     production_speed_buildings_factor = TAN_tuvan_economy_production_speed_buildings_factor
     research_speed_factor = TAN_tuvan_economy_research_speed_factor
     local_resources_factor = TAN_tuvan_economy_local_resources_factor
+    production_factory_efficiency_gain_factor = TAN_tuvan_economy_production_factory_efficiency_gain_factor
+    production_lack_of_resource_penalty_factor = TAN_tuvan_economy_production_lack_of_resource_penalty_factor
 }
 TAN_Soviet_Cirriculum = {
     research_speed_factor = TAN_Soviet_Cirriculum_research_speed_factor

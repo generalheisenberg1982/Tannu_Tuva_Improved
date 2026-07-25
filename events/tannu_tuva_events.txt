@@ -172,6 +172,100 @@ country_event = {
 			}
 			retire_character = TAN_kara_sal_pirinlei
 		}
-		}
 	}
+}
+country_event = {
+    id = TAN_events.3
+    title = TAN_events.3.t
+    desc = TAN_events.3.desc
+    picture = GFX_report_event_students
+
+    is_triggered_only = yes
+
+    trigger = {
+        NOT = { has_country_flag = TAN_students_sent_abroad }
+    }
+
+    option = {
+        name = TAN_events.3.a
+        set_country_flag = TAN_students_sent_abroad
+
+        country_event = {
+            id = TAN_events.4
+            days = 365
+        }
+    }
+}
+country_event = {
+    id = TAN_events.4
+    title = TAN_events.4.t
+    desc = TAN_events.4.desc
+    picture = GFX_report_event_students
+
+    is_triggered_only = yes
+
+    option = {
+        name = TAN_events.4.a
+        set_country_flag = TAN_students_first_returned
+
+        add_tech_bonus = {
+            name = TAN_students_abroad_infantry_bonus
+            bonus = 0.50
+            uses = 1
+            category = infantry_weapons
+        }
+
+        add_tech_bonus = {
+            name = TAN_students_abroad_electronics_bonus
+            bonus = 0.50
+            uses = 1
+            category = electronics
+        }
+
+        add_tech_bonus = {
+            name = TAN_students_abroad_industry_bonus
+            bonus = 0.50
+            uses = 1
+            category = industry
+        }
+
+        country_event = {
+            id = TAN_events.5
+            days = 365
+        }
+    }
+}
+country_event = {
+    id = TAN_events.5
+    title = TAN_events.5.t
+    desc = TAN_events.5.desc
+    picture = GFX_report_event_students
+
+    is_triggered_only = yes
+
+    option = {
+        name = TAN_events.5.a
+        set_country_flag = TAN_students_second_returned
+
+        add_tech_bonus = {
+            name = TAN_students_abroad_motorization_bonus
+            bonus = 0.50
+            uses = 1
+            category = motorized_equipment
+        }
+
+        add_tech_bonus = {
+            name = TAN_students_abroad_air_bonus
+            bonus = 0.50
+            uses = 1
+            category = air_equipment
+        }
+
+        add_tech_bonus = {
+            name = TAN_students_abroad_armor_bonus
+            bonus = 0.50
+            uses = 1
+            category = armor
+        }
+    }
 }
