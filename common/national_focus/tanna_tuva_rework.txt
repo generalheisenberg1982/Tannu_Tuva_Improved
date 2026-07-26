@@ -220,6 +220,10 @@ focus_tree = {
 				value = -100
 				localization = TAN_Invited_Soviet_Advisors_loc
 			}
+			add_victory_points = {
+				province = 10627
+				value = 3
+			}
 		}
 	}
 	focus = {
@@ -1521,8 +1525,8 @@ focus_tree = {
 			unlock_decision_tooltip = TAN_Allow_More_Private_Herds
 			subtract_from_variable = {
 				var = TAN_tuvan_economy_consumer_goods 
-				value = 10
-				tooltip = TAN_Remove_10_From_TAN_tuvan_economy_consumer_goods 
+				value = 0.10
+				tooltip = TAN_Remove_Point_10_From_TAN_tuvan_economy_consumer_goods 
 			}
 		}
 	}
@@ -1553,8 +1557,8 @@ focus_tree = {
 			}
 			subtract_from_variable = {
 				var = TAN_tuvan_economy_consumer_goods 
-				value = 5
-				tooltip = TAN_Remove_5_From_TAN_tuvan_economy_consumer_goods 
+				value = 0.10
+				tooltip = TAN_Remove_Point_10_From_TAN_tuvan_economy_consumer_goods 
 			}	
 		}
 	}
@@ -1606,8 +1610,8 @@ focus_tree = {
 			}
 			subtract_from_variable = {
 				var = TAN_tuvan_economy_consumer_goods 
-				value = 20
-				tooltip = TAN_Remove_20_From_TAN_tuvan_economy_consumer_goods 
+				value = 0.20
+				tooltip = TAN_Remove_Point_20_From_TAN_tuvan_economy_consumer_goods 
 			}	
 
 		}

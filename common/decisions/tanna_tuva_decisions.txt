@@ -976,8 +976,8 @@ TAN_The_Second_Collectivization = {
 		remove_effect = {
 			subtract_from_variable = {
 				var = TAN_tuvan_economy_consumer_goods
-				value = 10
-				tooltip = sub_10_from_TAN_tuvan_economy_consumer_goods
+				value = 0.10
+				tooltip = sub_point_10_from_TAN_tuvan_economy_consumer_goods
 			}
 		}
 		ai_will_do = { factor = 90 }
@@ -1071,7 +1071,7 @@ TAN_The_Second_Collectivization = {
 		days_remove = 60
 		days_re_enable = 30
 		modifier = {
-			weekly_stability = 0.005
+			stability_weekly = 0.005
 			consumer_goods_factor = 0.05
 		}
 		complete_effect = { }
@@ -1089,8 +1089,20 @@ TAN_The_Second_Collectivization = {
 		}
 		cost = 25
 		days_remove = 45
-		complete_effect = { }
-		remove_effect = { }
+		complete_effect = {  }
+		modifier = {
+			consumer_goods_factor = 0.10
+		}
+		remove_effect = { add_extra_state_shared_building_slots = 1
+			add_victory_points = {
+				province = 7819
+				value = 1
+			}
+			add_victory_points = {
+				province = 7730
+				value = 10
+			}
+		}
 	}
 }
 TAN_Education_Reforms_decisions = {
@@ -1195,7 +1207,7 @@ TAN_Soviet_Advisor_Development = {
 		cost = 15
 		days_remove = 45
 		modifier = {
-			consumer_goods_factor = -0.5
+			consumer_goods_factor = -0.05
 		}
 		remove_effect = {
 
@@ -1276,15 +1288,18 @@ TAN_Soviet_Advisor_Development = {
 			add_tech_bonus = { name = TAN_auto_repair_motorization_bonus bonus = 0.50 uses = 1 category = motorized_equipment }
 			add_to_variable = {
 				var = TAN_tuvan_economy_production_factory_efficiency_gain_factor
-				value = 0.015
+				value = 0.15
+				tooltip = TAN_add_point_15_to_TAN_tuvan_economy_production_factory_efficiency_gain_factor
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_production_speed_buildings_factor
-				value = 0.01
+				value = 0.07
+				tooltip = TAN_add_point_7_to_TAN_tuvan_economy_production_speed_buildings_factor
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_industrical_capacity_factory
 				value = 0.01
+				tooltip = TAN_add_point_1_to_TAN_tuvan_economy_industrical_capacity_factory
 			}
 		}
 	}
@@ -1313,6 +1328,7 @@ TAN_Soviet_Advisor_Development = {
 			subtract_from_variable = {
 				var = TAN_tuvan_economy_production_lack_of_resource_penalty_factor
 				value = 0.02
+				tooltip = TAN_subtract_point_2_from_TAN_tuvan_economy_production_lack_of_resource_penalty_factor
 			}
 		}
 	}
@@ -1330,10 +1346,12 @@ TAN_Soviet_Advisor_Development = {
 			subtract_from_variable = {
 				var = TAN_tuvan_economy_production_lack_of_resource_penalty_factor
 				value = 0.02
+				tooltip = TAN_subtract_point_2_from_TAN_tuvan_economy_production_lack_of_resource_penalty_factor
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_industrical_capacity_factory
 				value = 0.01
+				tooltip = TAN_add_point_1_to_TAN_tuvan_economy_industrical_capacity_factory
 			}
 		}
 	}
@@ -1353,30 +1371,37 @@ TAN_Soviet_Advisor_Development = {
 			subtract_from_variable = {
 				var = TAN_tuvan_economy_consumer_goods
 				value = 0.02
+				tooltip = TAN_subtract_point_2_from_TAN_tuvan_economy_consumer_goods
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_industrical_capacity_factory
 				value = 0.01
+				tooltip = TAN_add_point_1_to_TAN_tuvan_economy_industrical_capacity_factory
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_production_speed_buildings_factor
-				value = 0.01
+				value = 0.05
+				tooltip = TAN_add_point_5_to_TAN_tuvan_economy_production_speed_buildings_factor
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_research_speed_factor
 				value = 0.03
+				tooltip = TAN_add_point_3_to_TAN_tuvan_economy_research_speed_factor
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_local_resources_factor
 				value = 0.02
+				tooltip = TAN_add_point_2_to_TAN_tuvan_economy_local_resources_factor
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_production_factory_efficiency_gain_factor
-				value = 0.015
+				value = 0.08
+				tooltip = TAN_add_point_8_to_TAN_tuvan_economy_production_factory_efficiency_gain_factor
 			}
 			subtract_from_variable = {
 				var = TAN_tuvan_economy_production_lack_of_resource_penalty_factor
 				value = 0.01
+				tooltip = TAN_subtract_point_1_from_TAN_tuvan_economy_production_lack_of_resource_penalty_factor
 			}
 		}
 	}
@@ -1392,7 +1417,8 @@ TAN_Soviet_Advisor_Development = {
 			329 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 			add_to_variable = {
 				var = TAN_tuvan_economy_local_resources_factor
-				value = 0.01
+				value = 0.02
+				tooltip = TAN_add_point_2_to_TAN_tuvan_economy_local_resources_factor
 			}
 		}
 	}
@@ -1409,11 +1435,13 @@ TAN_Soviet_Advisor_Development = {
 			add_tech_bonus = { name = TAN_tuvtrans_motorization_bonus bonus = 0.50 uses = 1 category = motorized_equipment }
 			add_to_variable = {
 				var = TAN_tuvan_economy_local_resources_factor
-				value = 0.01
+				value = 0.02
+				tooltip = TAN_add_point_2_to_TAN_tuvan_economy_local_resources_factor
 			}
 			subtract_from_variable = {
 				var = TAN_tuvan_economy_consumer_goods
 				value = 0.02
+				tooltip = TAN_subtract_point_2_from_TAN_tuvan_economy_consumer_goods
 			}
 		}
 	}
@@ -1430,6 +1458,7 @@ TAN_Soviet_Advisor_Development = {
 			subtract_from_variable = {
 				var = TAN_tuvan_economy_consumer_goods
 				value = 0.02
+				tooltip = TAN_subtract_point_2_from_TAN_tuvan_economy_consumer_goods
 			}
 		}
 	}
@@ -1446,14 +1475,17 @@ TAN_Soviet_Advisor_Development = {
 			subtract_from_variable = {
 				var = TAN_tuvan_economy_consumer_goods
 				value = 0.02
+				tooltip = TAN_subtract_point_2_from_TAN_tuvan_economy_consumer_goods
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_production_factory_efficiency_gain_factor
 				value = 0.01
+				tooltip = TAN_add_point_1_to_TAN_tuvan_economy_production_factory_efficiency_gain_factor
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_local_resources_factor
-				value = 0.015
+				value = 0.05
+				tooltip = TAN_add_point_5_to_TAN_tuvan_economy_local_resources_factor
 			}
 		}
 	}
@@ -1483,14 +1515,17 @@ TAN_Soviet_Advisor_Development = {
 			subtract_from_variable = {
 				var = TAN_tuvan_economy_consumer_goods
 				value = 0.02
+				tooltip = TAN_subtract_point_2_from_TAN_tuvan_economy_consumer_goods
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_production_factory_efficiency_gain_factor
 				value = 0.01
+				tooltip = TAN_add_point_1_to_TAN_tuvan_economy_production_factory_efficiency_gain_factor
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_local_resources_factor
-				value = 0.015
+				value = 0.05
+				tooltip = TAN_add_point_5_to_TAN_tuvan_economy_local_resources_factor
 			}
 		}
 	}
@@ -1508,10 +1543,12 @@ TAN_Soviet_Advisor_Development = {
 			add_to_variable = {
 				var = TAN_tuvan_economy_local_resources_factor
 				value = 0.02
+				tooltip = TAN_add_point_2_to_TAN_tuvan_economy_local_resources_factor
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_production_speed_buildings_factor
 				value = 0.02
+				tooltip = TAN_add_point_2_to_TAN_tuvan_economy_production_speed_buildings_factor
 			}
 		}
 	}
@@ -1528,22 +1565,27 @@ TAN_Soviet_Advisor_Development = {
 			add_to_variable = {
 				var = TAN_tuvan_economy_industrical_capacity_factory
 				value = 0.01
+				tooltip = TAN_add_point_1_to_TAN_tuvan_economy_industrical_capacity_factory
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_production_speed_buildings_factor
-				value = 0.01
+				value = 0.02
+				tooltip = TAN_add_point_2_to_TAN_tuvan_economy_production_speed_buildings_factor
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_research_speed_factor
 				value = 0.04
+				tooltip = TAN_add_point_4_to_TAN_tuvan_economy_research_speed_factor
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_local_resources_factor
 				value = 0.02
+				tooltip = TAN_add_point_2_to_TAN_tuvan_economy_local_resources_factor
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_production_factory_efficiency_gain_factor
 				value = 0.015
+				tooltip = TAN_add_point_1_5_to_TAN_tuvan_economy_production_factory_efficiency_gain_factor
 			}
 		}
 	}
@@ -1560,18 +1602,22 @@ TAN_Soviet_Advisor_Development = {
 			subtract_from_variable = {
 				var = TAN_tuvan_economy_production_lack_of_resource_penalty_factor
 				value = 0.02
+				tooltip = TAN_subtract_point_2_from_TAN_tuvan_economy_production_lack_of_resource_penalty_factor
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_production_factory_efficiency_gain_factor
 				value = 0.015
+				tooltip = TAN_add_point_1_5_to_TAN_tuvan_economy_production_factory_efficiency_gain_factor
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_industrical_capacity_factory
 				value = 0.01
+				tooltip = TAN_add_point_1_to_TAN_tuvan_economy_industrical_capacity_factory
 			}
 			add_to_variable = {
 				var = TAN_tuvan_economy_local_resources_factor
-				value = 0.02
+				value = 0.05
+				tooltip = TAN_add_point_5_to_TAN_tuvan_economy_local_resources_factor
 			}
 		}
 	}
