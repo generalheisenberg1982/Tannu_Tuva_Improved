@@ -68,7 +68,14 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			add_autonomy_score = {
+				value = -100
+				localization = TAN_Reaffirmed_Soviet_Relations_loc
+			}
+			reverse_add_opinion_modifier = {
+				target = SOV
+				modifier = TAN_Reaffirmed_Soviet_Relations
+			}			
 		}
 	}
 	focus = {
@@ -168,7 +175,10 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			add_autonomy_score = {
+				value = -250
+				localization = TAN_Renewed_Soviet_Tuvan_Reaty_loc
+			}
 		}
 	}
 	focus = {
@@ -189,6 +199,27 @@ focus_tree = {
 		}
 		completion_reward = {
 			unlock_decision_category_tooltip = TAN_Soviet_Advisor_Development
+			unlock_decision_tooltip = TAN_Kyzyl_Sawmill
+			unlock_decision_tooltip = TAN_Kyzyl_Felt_Boot_and_Leather_Plant
+			unlock_decision_tooltip = TAN_Kyzyl_Brickworks
+			unlock_decision_tooltip = TAN_Kyzyl_Auto_Repair_Plant
+			unlock_decision_tooltip = TAN_Kyzyl_Mechanical_Mill
+			unlock_decision_tooltip = TAN_Kyzyl_Sewing_Combine
+			unlock_decision_tooltip = TAN_Kyzyl_Food_Combine
+			unlock_decision_tooltip = TAN_Kyzyl_Power_Station
+			unlock_decision_tooltip = TAN_Usinsky_Tract
+			unlock_decision_tooltip = TAN_Tuvtrans
+			unlock_decision_tooltip = TAN_Kharal_Naryn_Bai_Syut_Emi_Gold_Workings
+			unlock_decision_tooltip = TAN_Eerbek_Coal_Workings
+			unlock_decision_tooltip = TAN_Dus_Dag_Salt_Workings
+			unlock_decision_tooltip = TAN_Aktovrak_Asbestos
+			unlock_decision_tooltip = TAN_Moren_Mica
+			unlock_decision_tooltip = TAN_Elegest_Copper
+			unlock_decision_tooltip = TAN_Kaa_Khem_Iron
+			add_autonomy_score = {
+				value = -100
+				localization = TAN_Invited_Soviet_Advisors_loc
+			}
 		}
 	}
 	focus = {
@@ -281,7 +312,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			add_idea = TAN_Radio_Tuva
+			add_ideas = TAN_Radio_Tuva
 		}
 	}
 
@@ -303,7 +334,10 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			add_autonomy_score = {
+				value = -1000
+				localization = TAN_Closer_to_Moscow_loc
+			}
 		}
 	}
 	focus = {
@@ -323,7 +357,10 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			reverse_add_opinion_modifier = {
+				target = SOV
+				modifier = TAN_Adopted_Cyrillic_Opinion			
+			}
 		}
 	}
 	focus = {
@@ -717,6 +754,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = -0.05
+			unlock_decision_category_tooltip = TAN_Tokas_Purge
 			TAN_initialize_toka_support_gui = yes
 		}
 	}
@@ -801,6 +839,10 @@ focus_tree = {
 				value = 0.40
 				tooltip = add_100_to_var_tt
 			}
+			add_autonomy_score = {
+				value = -100
+				localization = TAN_Invited_Soviet_NKVD_loc
+			}
 		}
 	}
 
@@ -851,12 +893,20 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = TAN_Postage_Stamp_Fundraiser
+				days = 180
+			}
+			add_autonomy_score = {
+				value = -150
+				localization = TAN_Soviet_Tuvan_Stamps_loc
+			}
+			unlock_decision_tooltip = TAN_Countinue_Printing_Stamps
 		}
 	}
 	focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
-		id = TAN_Issue_the_Soviet_Aksa
+		id = TAN_Issue_A_New_Currency
 		icon = GFX_focus_RAJ_a_policy_of_silence
 		prerequisite = { focus = TAN_Invite_Soviet_Advisors }
 
@@ -873,7 +923,9 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			unlock_decision_tooltip = TAN_Soviets_Print_Aksa
+			unlock_decision_tooltip = TAN_Tuvans_Print_Aksa
+			custom_effect_tooltip = TAN_Mutually_Exclusive_Decisions_for_printing_Aska
 		}
 	}
 
@@ -973,6 +1025,7 @@ focus_tree = {
 			}
 			unlock_decision_tooltip = TAN_Talk_to_the_Deputies
 			unlock_decision_tooltip = TAN_Convince_Polat
+			unlock_decision_tooltip = TAN_Increase_Kutvan_Infleunce
 		}
 	}
 	focus = {
@@ -1070,6 +1123,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = TAN_Litaracy_Program
 			unlock_decision_category_tooltip = TAN_Education_Reforms_decisions
+			unlock_decision_tooltip = TAN_Expand_Literacy_Progam
 		}
 	}
 	focus = {
@@ -1092,7 +1146,8 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			add_stability = 0.05
+			add_ideas = TAN_Toka_Supervised_Monestary_Schools
 		}
 	}
 	focus = {
@@ -1122,6 +1177,7 @@ focus_tree = {
 				tooltip = add_10_to_Kurul_Support
 			}
 			unlock_decision_tooltip = TAN_Denounce_the_Montestaries
+			unlock_decision_tooltip = TAN_Detain_Monks
 		}
 	}
 	focus = {
@@ -1149,6 +1205,7 @@ focus_tree = {
 			set_global_flag = TAN_Going_After_HT
 			set_global_flag = TAN_Going_After_OS
 			set_global_flag = TAN_Going_After_KSO
+			unlock_decision_tooltip = TAN_Spread_Stalinist_Propaganda
 			unlock_decision_tooltip = TAN_Fabricate_Charges_Against_Oiun_Tanchai
 			unlock_decision_tooltip = TAN_Arrest_Oiun_Tanchai
 			unlock_decision_tooltip = TAN_Fabricate_Charges_Against_Kuzhuget_Seren
@@ -1313,7 +1370,28 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			unlock_decision_tooltip = TAN_Settle_Nomads_in_Khemchik
+			unlock_decision_tooltip = TAN_sp_promote_sedentarization
+			add_to_variable = {
+				var = TAN_tuvan_economy_industrical_capacity_factory 
+				value = 0.10
+				tooltip = add_point_10_to_TAN_tuvan_economy_industrical_capacity_factory
+			}
+			add_to_variable = {
+				var = TAN_tuvan_economy_industrical_capacity_factory 
+				value = 0.05
+				tooltip = add_point_5_to_TAN_tuvan_economy_industrical_capacity_factory
+			}
+			add_to_variable = {
+				var = TAN_tuvan_economy_production_factory_efficiency_gain_factor  
+				value = 0.05
+				tooltip = add_point_5_to_TAN_tuvan_economy_production_factory_efficiency_gain_factor 
+			}
+			add_to_variable = {
+				var = TAN_tuvan_economy_production_lack_of_resource_penalty_factor   
+				value = 0.05
+				tooltip = add_point_5_to_TAN_tuvan_economy_production_lack_of_resource_penalty_factor  
+			}
 		}
 	}
 
@@ -1337,7 +1415,16 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			unlock_decision_tooltip = TAN_Set_Up_Medical_Tents
+			unlock_decision_tooltip = TAN_Create_New_Towns
+			329 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			add_to_variable = {
+				var = TAN_tuvan_economy_industrical_capacity_factory 
+				value = 0.10
+				tooltip = add_point_10_to_TAN_tuvan_economy_industrical_capacity_factory
+			}
 		}
 	}
 
@@ -1429,6 +1516,14 @@ focus_tree = {
 		}
 		completion_reward = {
 
+			unlock_decision_tooltip = TAN_Force_the_Formation_of_Kolkhazs
+			unlock_decision_tooltip = TAN_Reduce_Private_Herds
+			unlock_decision_tooltip = TAN_Allow_More_Private_Herds
+			subtract_from_variable = {
+				var = TAN_tuvan_economy_consumer_goods 
+				value = 10
+				tooltip = TAN_Remove_10_From_TAN_tuvan_economy_consumer_goods 
+			}
 		}
 	}
 	focus = {
@@ -1451,7 +1546,16 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
+			add_stability = -0.05
+			add_political_power = 25
+			329 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			subtract_from_variable = {
+				var = TAN_tuvan_economy_consumer_goods 
+				value = 5
+				tooltip = TAN_Remove_5_From_TAN_tuvan_economy_consumer_goods 
+			}	
 		}
 	}
 	focus = {
@@ -1496,6 +1600,15 @@ focus_tree = {
 
 		}
 		completion_reward = {
+			add_stability = -0.15
+			329 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			subtract_from_variable = {
+				var = TAN_tuvan_economy_consumer_goods 
+				value = 20
+				tooltip = TAN_Remove_20_From_TAN_tuvan_economy_consumer_goods 
+			}	
 
 		}
 	}

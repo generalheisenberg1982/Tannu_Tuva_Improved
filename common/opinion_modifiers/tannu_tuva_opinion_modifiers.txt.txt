@@ -26,4 +26,10 @@ opinion_modifiers = {
     TAN_Closer_Ties_To_Germany = {
 		value = 65
 	}
+	TAN_Reaffirmed_Soviet_Relations = {
+		value = 20
+	}
+	TAN_Adopted_Cyrillic_Opinion = {
+		value = 20
+	}
 }

@@ -1,5 +1,7 @@
 TAN_ministry_of_internal_affairs_dynamic_modifier = {
-	political_power_gain = TAN_internal_affairs_pp_gain
+	icon = GFX_modifiers_sabotaged_resource
+    attacker_modifier = no
+    political_power_gain = TAN_internal_affairs_pp_gain
 	stability_factor = TAN_internal_affairs_stability_factor
 	communism_drift = TAN_internal_affairs_communism_drift
     drift_defence_factor = TAN_internal_affairs_drift_defense_factor
@@ -7,6 +9,8 @@ TAN_ministry_of_internal_affairs_dynamic_modifier = {
     opinion_gain_monthly_same_ideology_factor = TAN_internal_affairs_opinion_gain_monthly_same_ideology_factor
 }
 TAN_Tuvan_Economy = {
+    icon = GFX_modifiers_sabotaged_resource
+    attacker_modifier = no
     consumer_goods_factor = TAN_tuvan_economy_consumer_goods
     industrial_capacity_factory = TAN_tuvan_economy_industrical_capacity_factory
     production_speed_buildings_factor = TAN_tuvan_economy_production_speed_buildings_factor
@@ -16,6 +20,8 @@ TAN_Tuvan_Economy = {
     production_lack_of_resource_penalty_factor = TAN_tuvan_economy_production_lack_of_resource_penalty_factor
 }
 TAN_Soviet_Cirriculum = {
+    attacker_modifier = no
+    icon = GFX_modifiers_sabotaged_resource
     research_speed_factor = TAN_Soviet_Cirriculum_research_speed_factor
     communism_drift = TAN_Soviet_Cirriculum_communism_drift
 }

@@ -63,7 +63,6 @@ ideas = {
 			picture = SOV_soviet_hegemony
 			
 			allowed = {
-				has_country_leader = TAN_salchak_toka
 			}
 
 			allowed_civil_war = {
@@ -81,7 +80,6 @@ ideas = {
 			picture = SOV_soviet_hegemony
 			
 			allowed = {
-				has_country_leader = TAN_salchak_toka
 				has_government = communism
 			}
 
@@ -102,7 +100,6 @@ ideas = {
 			picture = SOV_soviet_hegemony
 			
 			allowed = {
-				has_country_leader = TAN_salchak_toka
 				has_government = communism
 			}
 
@@ -120,7 +117,6 @@ ideas = {
 			picture = SOV_soviet_hegemony
 			
 			allowed = {
-				has_country_leader = TAN_salchak_toka
 				has_government = communism
 			}
 
@@ -134,6 +130,81 @@ ideas = {
 				consumer_goods_factor = -0.10
 			}			
 		}
+		TAN_Postage_Stamp_Fundraiser = {
+			picture = SOV_soviet_hegemony
+			
+			allowed = {
+				has_government = communism
+				is_in_faction_with = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+			}			
+		}
+		TAN_Tuvan_Aksa = {
+			picture = SOV_soviet_hegemony
+			
+			allowed = {
+				has_global_flag = TAN_Adopted_Tuvan_Aksa
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+			}				
+		}
+		TAN_Soviet_Aksa = {
+			picture = SOV_soviet_hegemony
+			
+			allowed = {
+				has_global_flag = TAN_Adopted_Soviet_Aksa
+				is_in_faction_with = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				faction_trade_opinion_factor = 0.5
+				autonomy_gain_trade_factor = -0.5
+				extra_trade_to_overlord_factor = 0.3
+			}				
+		}
+		TAN_Toka_Supervised_Monestary_Schools = {
+			picture = SOV_soviet_hegemony
+			
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+				communism_drift = 0.01
+				nuetrality_drift = 0.01
+				drift_defence_factor = -0.15
+			}			
+		}		
 	}
 	hidden_ideas = {
 		hiddden_found_old_believers = {

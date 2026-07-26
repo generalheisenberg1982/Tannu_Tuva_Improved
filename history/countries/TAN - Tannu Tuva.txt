@@ -57,13 +57,22 @@ recruit_character = TAN_salchak_parchyn
 recruit_character = TAN_oiun_chunchuk_ool
 
 add_ideas = {
-	limited_conscription
-	Lacking_Military
-	Extremely_Weak_Government
-	Nationwide_Corruption
-	Communist_Policies
-	Revolution_Protection_Laws
-	Hyper_Inflated_Currency
+
+}
+set_variable = { TAN_tuvan_economy_consumer_goods = 0.50 }
+set_variable = { TAN_tuvan_economy_industrical_capacity_factory = -0.25 }
+set_variable = { TAN_tuvan_economy_production_speed_buildings_factor = -0.25 }
+set_variable = { TAN_tuvan_economy_research_speed_factor = -0.20 }
+set_variable = { TAN_tuvan_economy_local_resources_factor = -0.20 }
+set_variable = { TAN_tuvan_economy_production_factory_efficiency_gain_factor = -0.30 }
+set_variable = { TAN_tuvan_economy_production_lack_of_resource_penalty_factor = -0.10 }
+
+add_dynamic_modifier = {
+	modifier = TAN_Tuvan_Economy
+}
+
+SOV = {
+	puppet = TAN
 }
 
 set_politics = {
@@ -73,10 +82,9 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	communism = 98
-	democratic = 1
-	neutrality = 0.5
-	fascism = 0.5
+	communism = 80
+	democratic = 5
+	nuetrality = 15
 }
 
 1939.1.1 = {
@@ -127,7 +135,4 @@ set_politics = {
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
-}
-set_popularities = {
-	communism = 100
 }

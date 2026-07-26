@@ -1097,14 +1097,14 @@ TAN_Education_Reforms_decisions = {
 	TAN_Expand_Literacy_Progam = {
 		icon = GFX_decision_ger_military_buildup
 		available = {
-			has_completed_focus = TAN_Sedentarization
+			has_completed_focus = TAN_Education_Reforms
 			ROOT = { tag = TAN }
 			NOT = {
 				has_idea = TAN_Litaracy_Program
 			}
 		}
 		visible = {
-			has_completed_focus = TAN_Sedentarization
+			has_completed_focus = TAN_Education_Reforms
 			has_country_leader = { character = TAN_salchak_toka ruling_only = yes }
 		}
 		cost = 25
@@ -1128,7 +1128,79 @@ TAN_Education_Reforms_decisions = {
 	}	
 }
 TAN_Soviet_Advisor_Development = {
+	TAN_Soviets_Print_Aksa = {
+		icon = GFX_decision_generic_construct_civ_factory
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors has_completed_focus = TAN_Issue_A_New_Currency }
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors 
+			NOT = {
+				has_global_flag = TAN_Adopted_Tuvan_Aksa
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 45
+		complete_effect = {
+			add_autonomy_score = {
+				value = -750
+				localization = TAN_Tuva_Adopted_Soviet_Aksa_loc
+			}
+		}
+		remove_effect = {
+			add_ideas = TAN_Soviet_Aksa
+			set_global_flag = TAN_Adopted_Soviet_Aksa
+			subtract_from_variable = {
+				variable = TAN_tuvan_economy_consumer_goods
+				value = 0.05
+				tooltip = TAN_Subtract_Point_5_From_TAN_tuvan_economy_consumer_goods
+			}
+		}	
+	}
+	TAN_Tuvans_Print_Aksa = {
+		icon = GFX_decision_generic_construct_civ_factory
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors has_completed_focus = TAN_Issue_A_New_Currency } 
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors 
+			NOT = {
+				has_global_flag = TAN_Adopted_Soviet_Aksa
+			}
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 45
+		complete_effect = {
+			add_autonomy_score = {
+				value = 750
+				localization = TAN_Tuva_Adopted_Tuvan_Aksa_loc
+			}
+		}
+		remove_effect = {
+			add_ideas = TAN_Tuvan_Aksa
+			set_global_flag = TAN_Adopted_Tuvan_Aksa
+			subtract_from_variable = {
+				variable = TAN_tuvan_economy_consumer_goods
+				value = 0.10
+				tooltip = TAN_Subtract_Point_10_From_TAN_tuvan_economy_consumer_goods
+			}
+		}		
+	}
+	TAN_Countinue_Printing_Stamps = {
+		icon = GFX_decision_generic_construct_civ_factory
+		available = { has_completed_focus = TAN_Invite_Soviet_Advisors has_completed_focus = TAN_Postage_Stamps 
+		NOT = {
+			has_idea = TAN_Postage_Stamp_Fundraiser
+		}
+		} 
+		visible = { has_completed_focus = TAN_Invite_Soviet_Advisors 
+		}
+		fire_only_once = yes
+		cost = 15
+		days_remove = 45
+		modifier = {
+			consumer_goods_factor = -0.5
+		}
+		remove_effect = {
 
+		}			
+	}
 	TAN_Kyzyl_Sawmill = {
 		icon = GFX_decision_generic_construct_civ_factory
 		available = { has_completed_focus = TAN_Invite_Soviet_Advisors 329 = { infrastructure > 0 } }
@@ -1141,6 +1213,16 @@ TAN_Soviet_Advisor_Development = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
 			}
+			add_to_variable = {
+				variable = TAN_tuvan_economy_industrical_capacity_factory 
+				value = 0.10
+				tooltip = Add_Point_10_to_TAN_tuvan_economy_industrical_capacity_factory 
+			}
+			add_to_variable = {
+				variable = TAN_tuvan_economy_production_speed_buildings_factor  
+				value = 0.10
+				tooltip = Add_Point_10_to_TAN_tuvan_economy_production_speed_buildings_factor  
+			}
 		}
 	}
 
@@ -1152,7 +1234,13 @@ TAN_Soviet_Advisor_Development = {
 		cost = 25
 		days_remove = 45
 		remove_effect = {
-			329 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			329 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } '
+			add_to_variable = {
+				variable = TAN_tuvan_economy_local_resources_factor   
+				value = 0.10
+				tooltip = Add_Point_10_to_TAN_tuvan_economy_local_resources_factor
+			}
+			}
 		}
 	}
 
@@ -1167,6 +1255,11 @@ TAN_Soviet_Advisor_Development = {
 			329 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			add_to_variable = {
+				variable = TAN_tuvan_economy_local_resources_factor   
+				value = 0.10
+				tooltip = Add_Point_10_to_TAN_tuvan_economy_local_resources_factor
+			}
 			}
 		}
 	}
